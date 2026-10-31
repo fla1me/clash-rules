@@ -1,0 +1,377 @@
+payload:
+# ==============================================================================
+# SITES MASTER RULESET (ПОЛНЫЙ КОМПЛЕКТ САЙТОВ ДЛЯ ГРУППЫ "САЙТЫ")
+# Исчерпывающий список: стриминги, TikTok/CapCut, Microsoft, Adobe, Autodesk,
+# JetBrains, драйверы и производители ПК (AMD, NVIDIA, HP, Dell, Asus, Intel),
+# инструменты, форумы, крипта, 18+ и персональные домены.
+# ==============================================================================
+
+# ==============================================================================
+# 1. NETFLIX & СТРИМИНГ (ПОЛНЫЙ НАБОР С CDN И ТЕСТОВЫМИ СЕРВЕРАМИ)
+# ==============================================================================
+- DOMAIN-SUFFIX,netflix.com
+- DOMAIN-SUFFIX,netflix.net
+- DOMAIN-SUFFIX,netflix.ca
+- DOMAIN-SUFFIX,netflix.com.au
+- DOMAIN-SUFFIX,netflix.com.edgesuite.net
+- DOMAIN-SUFFIX,netflixinvestor.com
+- DOMAIN-SUFFIX,netflixstudios.com
+- DOMAIN-SUFFIX,netflixtechblog.com
+- DOMAIN-SUFFIX,nflxext.com
+- DOMAIN-SUFFIX,nflximg.com
+- DOMAIN-SUFFIX,nflximg.net
+- DOMAIN-SUFFIX,nflxsearch.net
+- DOMAIN-SUFFIX,nflxso.net
+- DOMAIN-SUFFIX,nflxvideo.net
+- DOMAIN-SUFFIX,fast.com
+- DOMAIN-SUFFIX,flxvpn.net
+- DOMAIN-SUFFIX,netflixdnstest0.com
+- DOMAIN-SUFFIX,netflixdnstest1.com
+- DOMAIN-SUFFIX,netflixdnstest2.com
+- DOMAIN-SUFFIX,netflixdnstest3.com
+- DOMAIN-SUFFIX,netflixdnstest4.com
+- DOMAIN-SUFFIX,netflixdnstest5.com
+- DOMAIN-SUFFIX,netflixdnstest6.com
+- DOMAIN-SUFFIX,netflixdnstest7.com
+- DOMAIN-SUFFIX,netflixdnstest8.com
+- DOMAIN-SUFFIX,netflixdnstest9.com
+- DOMAIN-SUFFIX,netflixdnstest10.com
+- DOMAIN,e13252.dscg.akamaiedge.net
+- DOMAIN,h-netflix.online-metrix.net
+- DOMAIN-SUFFIX,crunchyroll.com
+
+# ==============================================================================
+# 2. TIKTOK & BYTEDANCE & CAPCUT (ПОЛНЫЙ НАБОР С ЭФФЕКТАМИ И CDN)
+# ==============================================================================
+- DOMAIN-SUFFIX,tiktok.com
+- DOMAIN-SUFFIX,tiktokcdn.com
+- DOMAIN-SUFFIX,tiktokcdn-us.com
+- DOMAIN-SUFFIX,tiktokcdn-eu.com
+- DOMAIN-SUFFIX,tiktokcdn-in.com
+- DOMAIN-SUFFIX,tiktokv.com
+- DOMAIN-SUFFIX,tiktokv.us
+- DOMAIN-SUFFIX,tiktokv.eu
+- DOMAIN-SUFFIX,tiktokw.eu
+- DOMAIN-SUFFIX,tiktokd.net
+- DOMAIN-SUFFIX,tiktokd.org
+- DOMAIN-SUFFIX,tik-tokapi.com
+- DOMAIN-SUFFIX,tiktokmusic.app
+- DOMAIN-SUFFIX,tiktokglobalshop.com
+- DOMAIN-SUFFIX,byteoversea.com
+- DOMAIN-SUFFIX,byteoversea.net
+- DOMAIN-SUFFIX,ibytedtos.com
+- DOMAIN-SUFFIX,ibyteimg.com
+- DOMAIN-SUFFIX,byteimg.com
+- DOMAIN-SUFFIX,bytetcdn.com
+- DOMAIN-SUFFIX,bytedapm.com
+- DOMAIN-SUFFIX,bytegecko-i18n.com
+- DOMAIN-SUFFIX,byteintlapi.com
+- DOMAIN-SUFFIX,capcut.com
+- DOMAIN-SUFFIX,capcutapi.com
+- DOMAIN-SUFFIX,capcutapi.us
+- DOMAIN-SUFFIX,capcutcdn-us.com
+- DOMAIN-SUFFIX,capcutstatic.com
+- DOMAIN-SUFFIX,musical.ly
+- DOMAIN-SUFFIX,muscdn.com
+- DOMAIN-SUFFIX,marscode.com
+- DOMAIN-SUFFIX,trae.ai
+- DOMAIN-SUFFIX,ttwebview.com
+- DOMAIN-SUFFIX,isnssdk.com
+- DOMAIN-SUFFIX,snssdk.com
+- DOMAIN-SUFFIX,ipstatp.com
+- DOMAIN-SUFFIX,sgpstatp.com
+- DOMAIN-SUFFIX,pstatp.com
+- DOMAIN-SUFFIX,tlivecdn.com
+- DOMAIN-SUFFIX,ttlivecdn.com
+- DOMAIN-SUFFIX,ttwstatic.com
+- DOMAIN-SUFFIX,ttoversea.net
+- DOMAIN-SUFFIX,ttoverseaus.net
+- DOMAIN,lf16-effectcdn.byteeffecttos-g.com
+- DOMAIN,lf16-pkgcdn.pitaya-clientai.com
+- DOMAIN,p16-tiktokcdn-com.akamaized.net
+- DOMAIN,trae-api-sg.mchost.guru
+- DOMAIN-KEYWORD,tiktok
+- DOMAIN-KEYWORD,musical.ly
+
+# ==============================================================================
+# 3. MICROSOFT (ПОЛНЫЙ НАБОР: WINDOWS UPDATE, АКТИВАЦИЯ, 365, TEAMS, AZURE)
+# ==============================================================================
+- DOMAIN-SUFFIX,microsoft.com
+- DOMAIN-SUFFIX,live.com
+- DOMAIN-SUFFIX,office.com
+- DOMAIN-SUFFIX,office365.com
+- DOMAIN-SUFFIX,microsoftonline.com
+- DOMAIN-SUFFIX,msftconnecttest.com
+- DOMAIN-SUFFIX,visualstudio.com
+- DOMAIN-SUFFIX,azure.com
+- DOMAIN-SUFFIX,azureedge.net
+- DOMAIN-SUFFIX,aka.ms
+- DOMAIN-SUFFIX,1drv.ms
+- DOMAIN-SUFFIX,onedrive.com
+- DOMAIN-SUFFIX,sharepoint.com
+- DOMAIN-SUFFIX,windows.com
+- DOMAIN-SUFFIX,windowsupdate.com
+- DOMAIN-SUFFIX,microsoftedge.com
+- DOMAIN-SUFFIX,microsoftstore.com
+- DOMAIN-SUFFIX,msecnd.net
+- DOMAIN-SUFFIX,s-microsoft.com
+- DOMAIN-SUFFIX,skype.com
+- DOMAIN-SUFFIX,yammer.com
+- DOMAIN-SUFFIX,msn.com
+- DOMAIN-KEYWORD,microsoft
+
+# ==============================================================================
+# 4. ADOBE (CREATIVE CLOUD, PHOTOSHOP, ILLUSTRATOR, АКТИВАЦИЯ И CDN)
+# ==============================================================================
+- DOMAIN-SUFFIX,adobe.com
+- DOMAIN-SUFFIX,adobe.io
+- DOMAIN-SUFFIX,adobe.ly
+- DOMAIN-SUFFIX,adobecc.com
+- DOMAIN-SUFFIX,adobecce.com
+- DOMAIN-SUFFIX,adobeccstatic.com
+- DOMAIN-SUFFIX,adobecontent.io
+- DOMAIN-SUFFIX,adobelogin.com
+- DOMAIN-SUFFIX,adobeaemcloud.com
+- DOMAIN-SUFFIX,adobeaemcloud.net
+- DOMAIN-SUFFIX,creativecloud.com
+- DOMAIN-SUFFIX,photoshop.com
+- DOMAIN-SUFFIX,behance.net
+- DOMAIN-SUFFIX,typekit.net
+- DOMAIN-SUFFIX,acrobat.com
+- DOMAIN,cc-ext-prod-pkgs.s3.amazonaws.com
+
+# ==============================================================================
+# 5. AUTODESK (AUTOCAD, 3DS MAX, MAYA, ЛИЦЕНЗИИ И ОБЛАКО)
+# ==============================================================================
+- DOMAIN-SUFFIX,autodesk.com
+- DOMAIN-SUFFIX,autodesk360.com
+- DOMAIN-SUFFIX,autocad.com
+- DOMAIN-SUFFIX,tinkercad.com
+- DOMAIN-SUFFIX,autodesk.net
+- DOMAIN-SUFFIX,autodesk.eu
+- DOMAIN-SUFFIX,autodesk.ae
+- DOMAIN-SUFFIX,autodesk.be
+
+# ==============================================================================
+# 6. РАЗРАБОТКА, IDE И ВЕНДОРЫ СОФТА (JETBRAINS, DOCKER, ORACLE, ATLASSIAN)
+# ==============================================================================
+# JetBrains (PyCharm, IntelliJ, WebStorm, Kotlin, Grazie)
+- DOMAIN-SUFFIX,jetbrains.com
+- DOMAIN-SUFFIX,jetbrains.space
+- DOMAIN-SUFFIX,jetbrains.ai
+- DOMAIN-SUFFIX,jetbrains.io
+- DOMAIN-SUFFIX,jetbrains.net
+- DOMAIN-SUFFIX,jetbrains.org
+- DOMAIN-SUFFIX,jetbrains.team
+- DOMAIN-SUFFIX,intellij.com
+- DOMAIN-SUFFIX,intellij.net
+- DOMAIN-SUFFIX,intellij.org
+- DOMAIN-SUFFIX,datalore.io
+- DOMAIN-SUFFIX,grazie.ai
+- DOMAIN-SUFFIX,kotlinlang.org
+- DOMAIN-SUFFIX,kotlinconf.com
+
+# Docker & Oracle & Atlassian (Trello, Jira, Confluence, Bitbucket)
+- DOMAIN-SUFFIX,docker.com
+- DOMAIN-SUFFIX,docker.io
+- DOMAIN-SUFFIX,oracle.com
+- DOMAIN-SUFFIX,java.com
+- DOMAIN-SUFFIX,atlassian.com
+- DOMAIN-SUFFIX,trello.com
+- DOMAIN-SUFFIX,jira.com
+- DOMAIN-SUFFIX,bitbucket.org
+
+# ==============================================================================
+# 7. ИНСТРУМЕНТЫ ПРОДУКТИВНОСТИ (NOTION, FIGMA, MIRO, NOTEPAD++, ZAPIER)
+# ==============================================================================
+# Notion
+- DOMAIN-SUFFIX,notion.so
+- DOMAIN-SUFFIX,notion.com
+- DOMAIN-SUFFIX,notion.site
+- DOMAIN-SUFFIX,notion.ai
+- DOMAIN-SUFFIX,notion.dev
+- DOMAIN-SUFFIX,notion-static.com
+- DOMAIN-SUFFIX,notion-media.com
+- DOMAIN-SUFFIX,notionusercontent.com
+- DOMAIN-SUFFIX,hellonotion.com
+- DOMAIN-KEYWORD,notion
+
+# Figma & Miro & Дизайн
+- DOMAIN-SUFFIX,figma.com
+- DOMAIN-SUFFIX,figma.cool
+- DOMAIN-SUFFIX,miro.com
+- DOMAIN-SUFFIX,mirostatic.com
+
+# Удаленный доступ, связь и задачи
+- DOMAIN-SUFFIX,anydesk.com
+- DOMAIN-SUFFIX,teamviewer.com
+- DOMAIN-SUFFIX,slack.com
+- DOMAIN-SUFFIX,slack-edge.com
+- DOMAIN-SUFFIX,zoom.us
+- DOMAIN-SUFFIX,clickup.com
+- DOMAIN-SUFFIX,basecamp.com
+- DOMAIN-SUFFIX,37signals.com
+- DOMAIN-SUFFIX,make.com
+- DOMAIN-SUFFIX,zapier.com
+- DOMAIN-SUFFIX,zapier-deployment.com
+- DOMAIN-SUFFIX,zendesk.com
+- DOMAIN-SUFFIX,sentry.io
+- DOMAIN-SUFFIX,getsentry.net
+- DOMAIN-SUFFIX,notepad-plus-plus.org
+- DOMAIN-SUFFIX,aida64.com
+
+# Защищенная почта и приватность
+- DOMAIN-SUFFIX,proton.me
+- DOMAIN-SUFFIX,protonmail.com
+- DOMAIN-SUFFIX,tuta.com
+- DOMAIN-SUFFIX,tutanota.com
+- DOMAIN-SUFFIX,10minutemail.com
+- DOMAIN-SUFFIX,beeble.com
+
+# ==============================================================================
+# 8. ЖЕЛЕЗО, ДРАЙВЕРЫ И ЭЛЕКТРОНИКА (INTEL, AMD, NVIDIA, HP, DELL, ASUS, LG)
+# ==============================================================================
+# Intel
+- DOMAIN-SUFFIX,intel.com
+- DOMAIN-SUFFIX,intel.co.uk
+- DOMAIN-SUFFIX,intel.de
+- DOMAIN-SUFFIX,intel.fr
+- DOMAIN-SUFFIX,intel.ca
+- DOMAIN-SUFFIX,intel.in
+- DOMAIN-SUFFIX,intel.la
+- DOMAIN-SUFFIX,intelcdn.com
+- DOMAIN-SUFFIX,01.org
+- DOMAIN-SUFFIX,altera.com
+- DOMAIN-SUFFIX,acpica.com
+- DOMAIN-SUFFIX,oneapi.io
+- DOMAIN-SUFFIX,openvino.ai
+- DOMAIN-SUFFIX,thunderbolttechnology.net
+- DOMAIN-KEYWORD,intel
+
+# AMD & NVIDIA (драйверы Adrenalin, GeForce Experience, Studio)
+- DOMAIN-SUFFIX,amd.com
+- DOMAIN-SUFFIX,amd.com.cn
+- DOMAIN-SUFFIX,nvidia.com
+- DOMAIN-SUFFIX,geforce.com
+- DOMAIN-SUFFIX,nvidiagrid.net
+- DOMAIN,gfe.nvidia.com
+- DOMAIN,telemetry.nvidia.com
+
+# Производители ПК, ноутбуков, периферии и накопителей
+- DOMAIN-SUFFIX,hp.com
+- DOMAIN-SUFFIX,support.hp.com
+- DOMAIN-SUFFIX,hpe.com
+- DOMAIN-SUFFIX,dell.com
+- DOMAIN-SUFFIX,alienware.com
+- DOMAIN-SUFFIX,delltechnologies.com
+- DOMAIN-SUFFIX,asus.com
+- DOMAIN-SUFFIX,rog.asus.com
+- DOMAIN-SUFFIX,asuscomm.com
+- DOMAIN-SUFFIX,logitech.com
+- DOMAIN-SUFFIX,logi.com
+- DOMAIN-SUFFIX,logitechg.com
+- DOMAIN-SUFFIX,westerndigital.com
+- DOMAIN-SUFFIX,sandisk.com
+- DOMAIN-SUFFIX,wd.com
+- DOMAIN-SUFFIX,wdc.com
+- DOMAIN-SUFFIX,seagate.com
+- DOMAIN-SUFFIX,wacom.com
+- DOMAIN-SUFFIX,wacom.eu
+- DOMAIN-KEYWORD,wacom
+
+# Sony (корпоративные сервисы, камеры и электроника)
+- DOMAIN-SUFFIX,sony.com
+- DOMAIN-SUFFIX,sony.net
+- DOMAIN-SUFFIX,sony-europe.com
+- DOMAIN-SUFFIX,sony-asia.com
+- DOMAIN-KEYWORD,sony
+
+# LG Electronics (Smart TV, webOS, обновления)
+- DOMAIN-SUFFIX,lg.com
+- DOMAIN-SUFFIX,lge.com
+- DOMAIN-SUFFIX,lgtvcommon.com
+- DOMAIN-SUFFIX,lgthinq.com
+- DOMAIN-SUFFIX,lgappstv.com
+- DOMAIN-SUFFIX,lgsmartad.com
+- DOMAIN-SUFFIX,dacom.co.kr
+- DOMAIN-SUFFIX,kidc.net
+- DOMAIN-SUFFIX,uplus.co.kr
+- DOMAIN-KEYWORD,lge
+
+# ==============================================================================
+# 9. ФОРУМЫ, СООБЩЕСТВА И СОЦСЕТИ (4PDA, RU-BOARD, SNAPCHAT, FMHY)
+# ==============================================================================
+- DOMAIN-SUFFIX,4pda.to
+- DOMAIN-SUFFIX,ru-board.com
+- DOMAIN-SUFFIX,cwer.ws
+- DOMAIN-SUFFIX,snapchat.com
+- DOMAIN-SUFFIX,snap.com
+- DOMAIN-SUFFIX,sc-cdn.net
+- DOMAIN-SUFFIX,fmhy.net
+- DOMAIN-SUFFIX,fmhy.lol
+- DOMAIN-SUFFIX,strava.com
+- DOMAIN-SUFFIX,garmin.com
+- DOMAIN-SUFFIX,wikidot.com
+- DOMAIN-SUFFIX,linktr.ee
+- DOMAIN-SUFFIX,fastpic.org
+- DOMAIN-SUFFIX,fastpic.ru
+- DOMAIN-SUFFIX,backblazeb2.com
+
+# ==============================================================================
+# 10. КРИПТОВАЛЮТЫ И ФИНАНСЫ (COINBASE, KRAKEN, TRADINGVIEW, BESTCHANGE)
+# ==============================================================================
+- DOMAIN-SUFFIX,bestchange.com
+- DOMAIN-SUFFIX,bestchange.ru
+- DOMAIN-SUFFIX,bestchange.net
+- DOMAIN-SUFFIX,coinbase.com
+- DOMAIN-SUFFIX,kraken.com
+- DOMAIN-SUFFIX,tradingview.com
+- DOMAIN-SUFFIX,coinmarketcap.com
+- DOMAIN-SUFFIX,coingecko.com
+
+# ==============================================================================
+# 11. ЭНЦИКЛОПЕДИИ, СТАТЬИ И БЛОКИРОВКИ РКН (MEDIUM, ARCHIVE, IHERB)
+# ==============================================================================
+- DOMAIN-SUFFIX,medium.com
+- DOMAIN-SUFFIX,archive.org
+- DOMAIN-SUFFIX,iherb.com
+- DOMAIN-SUFFIX,patreon.com
+- DOMAIN-SUFFIX,patreonusercontent.com
+- DOMAIN-SUFFIX,quora.com
+- DOMAIN-SUFFIX,quoracdn.net
+
+# ==============================================================================
+# 12. 18+ СЕРВИСЫ (ПОЛНЫЙ СПИСОК С ЗЕРКАЛАМИ)
+# ==============================================================================
+- DOMAIN-SUFFIX,pornhub.com
+- DOMAIN-SUFFIX,phncdn.com
+- DOMAIN-SUFFIX,xhamster.com
+- DOMAIN-SUFFIX,xhamsterlive.com
+- DOMAIN-SUFFIX,xhcdn.com
+- DOMAIN-SUFFIX,xvideos.com
+- DOMAIN-SUFFIX,xvideos-cdn.com
+- DOMAIN-SUFFIX,xnxx.com
+- DOMAIN-SUFFIX,xnxx-cdn.com
+- DOMAIN-SUFFIX,xnxx-ru.com
+- DOMAIN-SUFFIX,xv-ru.com
+- DOMAIN-SUFFIX,redtube.com
+- DOMAIN-SUFFIX,redgifs.com
+- DOMAIN-SUFFIX,reddxxx.com
+- DOMAIN-SUFFIX,hqporner.com
+- DOMAIN-SUFFIX,beeg.com
+- DOMAIN-SUFFIX,f95zone.to
+- DOMAIN-SUFFIX,rule34.xxx
+- DOMAIN-SUFFIX,kemono.cr
+- DOMAIN-SUFFIX,pornolab.net
+- DOMAIN-SUFFIX,externulls.com
+- DOMAIN-SUFFIX,strpst.com
+- DOMAIN-SUFFIX,wstracker.online
+- DOMAIN-SUFFIX,plab.site
+
+# ==============================================================================
+# 13. ВАШИ ПЕРСОНАЛЬНЫЕ ДОМЕНЫ И СУФФИКСЫ ИЗ КОНФИГА
+# ==============================================================================
+- DOMAIN-SUFFIX,sws-extension.org
+- DOMAIN-SUFFIX,zipjpg.com
+- DOMAIN-SUFFIX,pirateface.co
+- DOMAIN-KEYWORD,pawchive
