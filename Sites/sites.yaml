@@ -7,6 +7,31 @@ payload:
 # ==============================================================================
 
 # ==============================================================================
+# 0. ЗАЩИТА ОТ ДЕТЕКТА РЕАЛЬНОГО IP (IP-CHECKERS, WEBRTC STUN & АНТИБОТ)
+# ==============================================================================
+- DOMAIN-SUFFIX,ipinfo.io
+- DOMAIN-SUFFIX,ipify.org
+- DOMAIN,api.ipify.org
+- DOMAIN-SUFFIX,ip-api.com
+- DOMAIN-SUFFIX,ipdata.co
+- DOMAIN-SUFFIX,icanhazip.com
+- DOMAIN-SUFFIX,ident.me
+- DOMAIN-SUFFIX,ifconfig.co
+- DOMAIN-SUFFIX,ifconfig.me
+- DOMAIN-SUFFIX,whoer.net
+- DOMAIN-SUFFIX,ipwho.is
+- DOMAIN,turnstile.cloudflare.com
+- DOMAIN-SUFFIX,turnstile.cloudflare.com
+- DOMAIN-SUFFIX,arkoselabs.com
+- DOMAIN-SUFFIX,hcaptcha.com
+- DOMAIN-SUFFIX,recaptcha.net
+- DOMAIN,stun.l.google.com
+- DOMAIN,stun1.l.google.com
+- DOMAIN,stun2.l.google.com
+- DOMAIN,stun3.l.google.com
+- DOMAIN,stun4.l.google.com
+
+# ==============================================================================
 # 1. NETFLIX & СТРИМИНГ (ПОЛНЫЙ НАБОР С CDN И ТЕСТОВЫМИ СЕРВЕРАМИ)
 # ==============================================================================
 - DOMAIN-SUFFIX,netflix.com
@@ -185,48 +210,12 @@ payload:
 # 7. ИНСТРУМЕНТЫ ПРОДУКТИВНОСТИ (NOTION, FIGMA, MIRO, NOTEPAD++, ZAPIER)
 # ==============================================================================
 # Notion
-- DOMAIN-SUFFIX,notion.so
-- DOMAIN-SUFFIX,notion.com
-- DOMAIN-SUFFIX,notion.site
-- DOMAIN-SUFFIX,notion.ai
-- DOMAIN-SUFFIX,notion.dev
-- DOMAIN-SUFFIX,notion-static.com
-- DOMAIN-SUFFIX,notion-media.com
-- DOMAIN-SUFFIX,notionusercontent.com
-- DOMAIN-SUFFIX,hellonotion.com
-- DOMAIN-KEYWORD,notion
-
-# Figma & Miro & Дизайн
 - DOMAIN-SUFFIX,figma.com
 - DOMAIN-SUFFIX,figma.cool
-- DOMAIN-SUFFIX,miro.com
-- DOMAIN-SUFFIX,mirostatic.com
-
-# Удаленный доступ, связь и задачи
-- DOMAIN-SUFFIX,anydesk.com
-- DOMAIN-SUFFIX,teamviewer.com
 - DOMAIN-SUFFIX,slack.com
 - DOMAIN-SUFFIX,slack-edge.com
 - DOMAIN-SUFFIX,zoom.us
-- DOMAIN-SUFFIX,clickup.com
-- DOMAIN-SUFFIX,basecamp.com
-- DOMAIN-SUFFIX,37signals.com
-- DOMAIN-SUFFIX,make.com
-- DOMAIN-SUFFIX,zapier.com
-- DOMAIN-SUFFIX,zapier-deployment.com
-- DOMAIN-SUFFIX,zendesk.com
-- DOMAIN-SUFFIX,sentry.io
-- DOMAIN-SUFFIX,getsentry.net
-- DOMAIN-SUFFIX,notepad-plus-plus.org
-- DOMAIN-SUFFIX,aida64.com
-
-# Защищенная почта и приватность
-- DOMAIN-SUFFIX,proton.me
-- DOMAIN-SUFFIX,protonmail.com
-- DOMAIN-SUFFIX,tuta.com
-- DOMAIN-SUFFIX,tutanota.com
-- DOMAIN-SUFFIX,10minutemail.com
-- DOMAIN-SUFFIX,beeble.com
+- DOMAIN-SUFFIX,teamviewer.com
 
 # ==============================================================================
 # 8. ЖЕЛЕЗО, ДРАЙВЕРЫ И ЭЛЕКТРОНИКА (INTEL, AMD, NVIDIA, HP, DELL, ASUS, LG)
@@ -341,35 +330,7 @@ payload:
 - DOMAIN-SUFFIX,quoracdn.net
 
 # ==============================================================================
-# 12. 18+ СЕРВИСЫ (ПОЛНЫЙ СПИСОК С ЗЕРКАЛАМИ)
-# ==============================================================================
-- DOMAIN-SUFFIX,pornhub.com
-- DOMAIN-SUFFIX,phncdn.com
-- DOMAIN-SUFFIX,xhamster.com
-- DOMAIN-SUFFIX,xhamsterlive.com
-- DOMAIN-SUFFIX,xhcdn.com
-- DOMAIN-SUFFIX,xvideos.com
-- DOMAIN-SUFFIX,xvideos-cdn.com
-- DOMAIN-SUFFIX,xnxx.com
-- DOMAIN-SUFFIX,xnxx-cdn.com
-- DOMAIN-SUFFIX,xnxx-ru.com
-- DOMAIN-SUFFIX,xv-ru.com
-- DOMAIN-SUFFIX,redtube.com
-- DOMAIN-SUFFIX,redgifs.com
-- DOMAIN-SUFFIX,reddxxx.com
-- DOMAIN-SUFFIX,hqporner.com
-- DOMAIN-SUFFIX,beeg.com
-- DOMAIN-SUFFIX,f95zone.to
-- DOMAIN-SUFFIX,rule34.xxx
-- DOMAIN-SUFFIX,kemono.cr
-- DOMAIN-SUFFIX,pornolab.net
-- DOMAIN-SUFFIX,externulls.com
-- DOMAIN-SUFFIX,strpst.com
-- DOMAIN-SUFFIX,wstracker.online
-- DOMAIN-SUFFIX,plab.site
-
-# ==============================================================================
-# 13. ВАШИ ПЕРСОНАЛЬНЫЕ ДОМЕНЫ И СУФФИКСЫ ИЗ КОНФИГА
+# 12. ВАШИ ПЕРСОНАЛЬНЫЕ ДОМЕНЫ И СУФФИКСЫ ИЗ КОНФИГА
 # ==============================================================================
 - DOMAIN-SUFFIX,sws-extension.org
 - DOMAIN-SUFFIX,zipjpg.com

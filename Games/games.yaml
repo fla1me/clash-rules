@@ -402,3 +402,15 @@ payload:
 - DOMAIN-SUFFIX,gog-statics.com
 - DOMAIN-SUFFIX,wargaming.net
 - DOMAIN-SUFFIX,worldoftanks.eu
+
+# ==============================================================================
+# КАПЧА ВХОДА ROBLOX/EA И ДОПОЛНИТЕЛЬНЫЕ ИГРОВЫЕ СЕРВИСЫ
+# ==============================================================================
+- DOMAIN-SUFFIX,arkoselabs.com
+- DOMAIN-SUFFIX,arkose.com
+- DOMAIN-SUFFIX,chess.com
+- DOMAIN-SUFFIX,chesscomfiles.com
+- DOMAIN-SUFFIX,itch.io
+- DOMAIN-SUFFIX,itch.zone
+- DOMAIN-SUFFIX,modrinth.com
+- DOMAIN-SUFFIX,modrinth.gg

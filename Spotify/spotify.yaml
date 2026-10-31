@@ -103,3 +103,17 @@ payload:
 - DOMAIN-SUFFIX,album.link
 - DOMAIN-SUFFIX,artist.link
 - DOMAIN-SUFFIX,pods.link
+
+# ==============================================================================
+# ТЕКСТЫ ПЕСЕН В SPOTIFY, ИНДИ, ШАЗАМ И ШЛЮЗЫ АВТОРИЗАЦИИ
+# ==============================================================================
+- DOMAIN-SUFFIX,musixmatch.com
+- DOMAIN-SUFFIX,genius.com
+- DOMAIN-SUFFIX,bandcamp.com
+- DOMAIN-SUFFIX,bcbits.com
+- DOMAIN-SUFFIX,shazam.com
+- DOMAIN,cdn-spotify-experiments.conductrics.com
+- DOMAIN-SUFFIX,spotifynewsroom.jp
+- IP-CIDR,104.154.127.126/32,no-resolve
+- IP-CIDR,35.186.224.47/32,no-resolve
+- PROCESS-NAME,com.spotify.music
