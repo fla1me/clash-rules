@@ -306,7 +306,7 @@ payload:
 - DOMAIN,d.docs.live.net
 
 # ==============================================================================
-# 10. AI IDE И РЕДАКТОРЫ КОДА (CURSOR / WINDSURF)
+# 10. AI IDE, РЕДАКТОРЫ КОДА И АССИСТЕНТЫ (CURSOR / WINDSURF / ZED / TRAE / ZCODE)
 # ==============================================================================
 # Cursor AI & Anysphere
 - DOMAIN-SUFFIX,cursor.sh
@@ -322,6 +322,42 @@ payload:
 # Windsurf & Codeium (главный аналог Cursor)
 - DOMAIN-SUFFIX,codeium.com
 - DOMAIN-SUFFIX,windsurf.ai
+
+# Zed AI (Сверхбыстрый редактор со встроенным ИИ)
+- DOMAIN-SUFFIX,zed.dev
+
+# Trae AI (AI IDE от ByteDance — главный конкурент Cursor)
+- DOMAIN-SUFFIX,trae.ai
+
+# Continue (Open-source AI ассистент для VS Code и JetBrains)
+- DOMAIN-SUFFIX,continue.dev
+
+# Cline & Roo Code (Автономные AI-агенты для написания кода)
+- DOMAIN-SUFFIX,cline.bot
+- DOMAIN-SUFFIX,roo.dev
+
+# Supermaven (Быстрый AI-автокомплит кода)
+- DOMAIN-SUFFIX,supermaven.com
+
+# Tabnine (ИИ-ассистент разработчика)
+- DOMAIN-SUFFIX,tabnine.com
+
+# Sourcegraph Cody (Контекстный поиск и AI по кодовой базе)
+- DOMAIN-SUFFIX,cody.dev
+- DOMAIN-SUFFIX,sourcegraph.com
+
+# Augment Code & Devin AI (Автономные AI-инженеры)
+- DOMAIN-SUFFIX,augmentcode.com
+- DOMAIN-SUFFIX,cognition.ai
+- DOMAIN-SUFFIX,devin.ai
+
+# Aider (AI парное программирование в консоли)
+- DOMAIN-SUFFIX,aider.chat
+
+# ZCode (ZCode AI / Z-Code System)
+- DOMAIN-SUFFIX,zcode.ai
+- DOMAIN-SUFFIX,zcodesystem.com
+- DOMAIN-KEYWORD,zcode
 
 # ==============================================================================
 # 11. ДРУГИЕ ИИ-СЕРВИСЫ, АГРЕГАТОРЫ И ГЕНЕРАТОРЫ
