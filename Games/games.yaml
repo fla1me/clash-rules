@@ -1,13 +1,14 @@
 payload:
 # ==============================================================================
-# ULTIMATE GAMING MASTER RULESET (ИГРОВЫЕ ПЛАТФОРМЫ, СТУДИИ, АНТИЧИТЫ И CDN)
-# Исчерпывающий список игровых сервисов: Steam/Valve, Xbox/Microsoft, PlayStation,
-# Nintendo, Epic Games, EA, Ubisoft, Blizzard/Activision, Riot, Roblox, Supercell,
-# HoYoverse/Kuro, Rockstar/2K, японские издатели, онлайн-шутеры и античиты.
+# ULTIMATE GAMING MASTER RULESET (ИГРЫ, МАГАЗИНЫ, АНТИЧИТЫ И API — БЕЗ CDN СКАЧИВАНИЯ)
+# Игровые сервисы: авторизация, магазины, сообщества, матчинг, лобби и античиты.
+# ТЯЖЕЛЫЕ CDN СКАЧИВАНИЯ И ОБНОВЛЕНИЙ ИСКЛЮЧЕНЫ, чтобы игры качались напрямую
+# на максимальной скорости вашего провайдера (DIRECT) и не расходовали трафик VPN!
 # ==============================================================================
 
 # ==============================================================================
-# 1. VALVE & STEAM (МАГАЗИН, СООБЩЕСТВО, ИНВЕНТАРЬ, ИГРЫ И CDN)
+# 1. VALVE & STEAM (МАГАЗИН, СООБЩЕСТВО, ИНВЕНТАРЬ, АВТОРИЗАЦИЯ И ИГРЫ)
+# (CDN скачивания игр steamcdn/steamcontent исключены для максимальной скорости DIRECT)
 # ==============================================================================
 - DOMAIN-SUFFIX,steamcommunity.com
 - DOMAIN-SUFFIX,steampowered.com
@@ -23,12 +24,8 @@ payload:
 - DOMAIN-SUFFIX,steamstore-a.akamaihd.net
 - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
-- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
-- DOMAIN-SUFFIX,steammobile.akamaized.net
-- DOMAIN-SUFFIX,steamcontent.tnkjmec.com
 - DOMAIN-KEYWORD,steambroadcast
 - DOMAIN-KEYWORD,steamstore
-- DOMAIN-KEYWORD,steam
 # Игры Valve
 - DOMAIN-SUFFIX,counter-strike.net
 - DOMAIN-SUFFIX,dota2.com
@@ -58,7 +55,6 @@ payload:
 - DOMAIN-SUFFIX,xboxcloudgaming.com
 - DOMAIN-SUFFIX,msgamestudios.com
 - DOMAIN-SUFFIX,renovacionxboxlive.com
-- DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
 - DOMAIN,store-images.s-microsoft.com
 # Minecraft & Mojang
 - DOMAIN-SUFFIX,minecraft.net
@@ -89,7 +85,7 @@ payload:
 - DOMAIN-SUFFIX,tellmewhygame.com
 
 # ==============================================================================
-# 3. SONY PLAYSTATION (PSN, STORE, SIE, СЕРВЕРЫ АВТОРИЗАЦИИ И СТУДИИ)
+# 3. SONY PLAYSTATION (PSN, STORE, SIE, АВТОРИЗАЦИЯ И СТУДИИ)
 # ==============================================================================
 - DOMAIN-SUFFIX,playstation.com
 - DOMAIN-SUFFIX,playstation.net
@@ -101,10 +97,7 @@ payload:
 - DOMAIN-SUFFIX,playstation.co.jp
 - DOMAIN-SUFFIX,playstation.co.uk
 - DOMAIN-SUFFIX,playstation.eu
-- DOMAIN-SUFFIX,psn.playstation.net
 - DOMAIN-SUFFIX,playstation-cloud.net
-- DOMAIN-SUFFIX,my.playstation.com
-- DOMAIN,auth.api.sonyentertainmentnetwork.com
 - DOMAIN-SUFFIX,naughtydog.com
 - DOMAIN-SUFFIX,insomniac.games
 - DOMAIN-SUFFIX,santamonicastudio.com
@@ -113,7 +106,7 @@ payload:
 - DOMAIN-SUFFIX,bungie.net
 
 # ==============================================================================
-# 4. NINTENDO (ESHOP, SWITCH ONLINE, АККАУНТЫ, ИГРЫ И РЕГИОНАЛЬНЫЕ ЗЕРКАЛА)
+# 4. NINTENDO (ESHOP, SWITCH ONLINE, АККАУНТЫ, ИГРЫ И ЗЕРКАЛА)
 # ==============================================================================
 - DOMAIN-SUFFIX,nintendo.com
 - DOMAIN-SUFFIX,nintendo.net
@@ -127,77 +120,73 @@ payload:
 - DOMAIN-SUFFIX,nintendo.fr
 - DOMAIN-SUFFIX,nintendo.it
 - DOMAIN-SUFFIX,nintendo.co.uk
-- DOMAIN-SUFFIX,nintendo.com.au
+- DOMAIN-SUFFIX,nintendo.ru
 - DOMAIN-SUFFIX,pokemon.com
-- DOMAIN-SUFFIX,pokemon-games.com
 
 # ==============================================================================
-# 5. EPIC GAMES & UNREAL ENGINE (МАГАЗИН, FORTNITE, FAB, EASYANTICHEAT)
+# 5. EPIC GAMES & UNREAL ENGINE (МАГАЗИН, FORTNITE, FAB, АНТИЧИТЫ)
 # ==============================================================================
 - DOMAIN-SUFFIX,epicgames.com
 - DOMAIN-SUFFIX,epicgames.dev
 - DOMAIN-SUFFIX,unrealengine.com
-- DOMAIN-SUFFIX,unrealtournament.com
 - DOMAIN-SUFFIX,fortnite.com
 - DOMAIN-SUFFIX,fab.com
-- DOMAIN-SUFFIX,fallguys.com
-- DOMAIN-SUFFIX,rocketleague.com
-- DOMAIN-SUFFIX,psyonix.com
+- DOMAIN-SUFFIX,artstation.com
+- DOMAIN-SUFFIX,quixel.com
+- DOMAIN-SUFFIX,capturingreality.com
+- DOMAIN-SUFFIX,sketchfab.com
 - DOMAIN-SUFFIX,eac-cdn.com
 - DOMAIN-SUFFIX,easyanticheat.net
-- DOMAIN-SUFFIX,easy.ac
 - DOMAIN-KEYWORD,epicgames
+- DOMAIN-KEYWORD,easyanticheat
 
 # ==============================================================================
 # 6. ELECTRONIC ARTS (EA APP, ORIGIN, APEX, BATTLEFIELD, FC 24/25, SIMS)
 # ==============================================================================
 - DOMAIN-SUFFIX,ea.com
 - DOMAIN-SUFFIX,origin.com
-- DOMAIN-SUFFIX,origin-a.akamaihd.net
 - DOMAIN-SUFFIX,electronicarts.com
-- DOMAIN-SUFFIX,eatechnology.com
 - DOMAIN-SUFFIX,ea.tt.omtrdc.net
-- DOMAIN-SUFFIX,bio-ea.com
 - DOMAIN-SUFFIX,tiberiumalliances.com
-- DOMAIN-SUFFIX,battlefield.com
-- DOMAIN-SUFFIX,eaassets-a.akamaihd.net
-- DOMAIN-SUFFIX,eafc.com
-- DOMAIN-SUFFIX,thesims.com
-- DOMAIN-SUFFIX,apexlegends.com
 - DOMAIN-SUFFIX,bioware.com
 - DOMAIN-SUFFIX,respawn.com
-- DOMAIN-KEYWORD,ea.com
+- DOMAIN-SUFFIX,dice.se
+- DOMAIN-SUFFIX,eaplay.com
+- DOMAIN-KEYWORD,origin
 
 # ==============================================================================
 # 7. UBISOFT (UBISOFT CONNECT, UPLAY, R6 SIEGE, XDEFIANT, ASSASSIN'S CREED)
 # ==============================================================================
 - DOMAIN-SUFFIX,ubisoft.com
-- DOMAIN-SUFFIX,uplay.com
 - DOMAIN-SUFFIX,ubi.com
+- DOMAIN-SUFFIX,uplay.com
 - DOMAIN-SUFFIX,ubisoftconnect.com
-- DOMAIN-SUFFIX,rainbow6.com
-- DOMAIN-SUFFIX,r6siege.com
-- DOMAIN-SUFFIX,trackmania.com
-- DOMAIN-SUFFIX,ubisoft-orbit.com
-- DOMAIN-SUFFIX,ubisoftservices.com
 - DOMAIN-KEYWORD,ubisoft
+- DOMAIN-KEYWORD,uplay
 
 # ==============================================================================
 # 8. BLIZZARD & ACTIVISION (BATTLE.NET, CALL OF DUTY, DEMONWARE, WOW, DIABLO)
 # ==============================================================================
-- DOMAIN-SUFFIX,battle.net
 - DOMAIN-SUFFIX,blizzard.com
-- DOMAIN-SUFFIX,blizzard.net
-- DOMAIN-SUFFIX,blz-contentstack.com
+- DOMAIN-SUFFIX,battle.net
+- DOMAIN-SUFFIX,bnet.com
 - DOMAIN-SUFFIX,worldofwarcraft.com
-- DOMAIN-SUFFIX,diablo4.com
 - DOMAIN-SUFFIX,playoverwatch.com
+- DOMAIN-SUFFIX,diablo.com
+- DOMAIN-SUFFIX,diablo3.com
+- DOMAIN-SUFFIX,diablo4.com
+- DOMAIN-SUFFIX,diabloimmortal.com
 - DOMAIN-SUFFIX,hearthstone.com
+- DOMAIN-SUFFIX,starcraft.com
+- DOMAIN-SUFFIX,starcraft2.com
+- DOMAIN-SUFFIX,warcraft.com
+- DOMAIN-KEYWORD,blizzard
+- DOMAIN-KEYWORD,battle.net
 # Activision & Call of Duty & Демонвейр
 - DOMAIN-SUFFIX,activision.com
 - DOMAIN-SUFFIX,callofduty.com
 - DOMAIN-SUFFIX,demonware.net
-- DOMAIN-SUFFIX,atvi.com
+- DOMAIN-SUFFIX,mw3.demonware.net
 - DOMAIN-SUFFIX,treyarch.com
 - DOMAIN-SUFFIX,infinityward.com
 - DOMAIN-SUFFIX,sledgehammergames.com
@@ -212,19 +201,19 @@ payload:
 - DOMAIN-SUFFIX,riotcdn.net
 - DOMAIN-SUFFIX,pvp.net
 - DOMAIN-SUFFIX,teamfighttactics.leagueoflegends.com
-- DOMAIN-SUFFIX,wildrift.leagueoflegends.com
-- DOMAIN-SUFFIX,playruneterra.com
-- DOMAIN-KEYWORD,riotgames
+- DOMAIN-SUFFIX,wildriftleague.com
+- DOMAIN-SUFFIX,legendsofruneterra.com
+- DOMAIN-SUFFIX,riotgames.net
+- DOMAIN-SUFFIX,vanguard.riotgames.com
 
 # ==============================================================================
-# 10. ROBLOX (КЛИЕНТ, ДВИЖОК, СТУДИЯ, ИНВЕНТАРЬ И АВТОРИЗАЦИЯ ARKOSE)
+# 10. ROBLOX (КЛИЕНТ, ДВИЖОК, СТУДИЯ, ИНВЕНТАРЬ И АВТОРИЗАЦИЯ)
 # ==============================================================================
 - DOMAIN-SUFFIX,roblox.com
 - DOMAIN-SUFFIX,rbxcdn.com
-- DOMAIN-SUFFIX,roblox.cn
-- DOMAIN-SUFFIX,robloxext.com
-- DOMAIN-SUFFIX,rbx.com
 - DOMAIN-SUFFIX,robloxlabs.com
+- DOMAIN-SUFFIX,rbx.com
+- DOMAIN-SUFFIX,roblox.cn
 - DOMAIN-KEYWORD,roblox
 
 # ==============================================================================
@@ -234,12 +223,11 @@ payload:
 - DOMAIN-SUFFIX,supercell.net
 - DOMAIN-SUFFIX,supercellid.com
 - DOMAIN-SUFFIX,brawlstars.com
-- DOMAIN-SUFFIX,brawlstarsgame.com
 - DOMAIN-SUFFIX,clashofclans.com
 - DOMAIN-SUFFIX,clashroyale.com
 - DOMAIN-SUFFIX,squadbustersgame.com
 - DOMAIN-SUFFIX,haydaygame.com
-- DOMAIN-SUFFIX,boombeachgame.com
+- DOMAIN-SUFFIX,boombeach.com
 - DOMAIN-KEYWORD,supercell
 
 # ==============================================================================
@@ -247,11 +235,11 @@ payload:
 # ==============================================================================
 - DOMAIN-SUFFIX,hoyoverse.com
 - DOMAIN-SUFFIX,mihoyo.com
-- DOMAIN-SUFFIX,hoyolab.com
 - DOMAIN-SUFFIX,genshinimpact.com
 - DOMAIN-SUFFIX,honkaistarrail.com
 - DOMAIN-SUFFIX,zenlesszonezero.com
-- DOMAIN-SUFFIX,yuanshen.com
+- DOMAIN-SUFFIX,honkaiimpact3.com
+- DOMAIN-SUFFIX,hoyolab.com
 # Kuro Games (Wuthering Waves)
 - DOMAIN-SUFFIX,kurogames.com
 - DOMAIN-SUFFIX,wutheringwaves.gg
@@ -261,18 +249,12 @@ payload:
 # 13. ROCKSTAR GAMES & 2K / TAKE-TWO (GTA ONLINE, SOCIAL CLUB, 2K CORE)
 # ==============================================================================
 - DOMAIN-SUFFIX,rockstargames.com
-- DOMAIN-SUFFIX,rsg.sc
 - DOMAIN-SUFFIX,rockstarnorth.com
-- DOMAIN-SUFFIX,rockstarwarehouse.com
-- DOMAIN-SUFFIX,socialclub.rockstargames.com
-- DOMAIN-SUFFIX,2k.com
+- DOMAIN-SUFFIX,rsg.sc
 - DOMAIN-SUFFIX,take2games.com
-- DOMAIN-SUFFIX,2kcoretech.online
-- DOMAIN-SUFFIX,borderlands.com
-- DOMAIN-SUFFIX,civilization.com
-- DOMAIN-SUFFIX,mafiagame.com
-- DOMAIN-SUFFIX,bioshock.com
-- DOMAIN-SUFFIX,xcom.com
+- DOMAIN-SUFFIX,2k.com
+- DOMAIN-SUFFIX,2kgames.com
+- DOMAIN-KEYWORD,rockstargames
 
 # ==============================================================================
 # 14. ЯПОНСКИЕ ИЗДАТЕЛИ (BANDAI NAMCO, CAPCOM, SQUARE ENIX, SEGA, FROM SOFTWARE)
@@ -281,41 +263,29 @@ payload:
 - DOMAIN-SUFFIX,bandainamcoent.com
 - DOMAIN-SUFFIX,bandainamcoent.eu
 - DOMAIN-SUFFIX,bandainamco.co.jp
-- DOMAIN-SUFFIX,bn-ent.net
-- DOMAIN-SUFFIX,eldenring.com
-- DOMAIN-SUFFIX,tekken.com
-
+- DOMAIN-SUFFIX,fromsoftware.jp
 # Capcom (Resident Evil, Monster Hunter, Street Fighter, Dragon's Dogma)
 - DOMAIN-SUFFIX,capcom.com
-- DOMAIN-SUFFIX,capcom-games.com
 - DOMAIN-SUFFIX,capcom.co.jp
-- DOMAIN-SUFFIX,capcom-unity.com
-- DOMAIN-SUFFIX,residentevil.com
+- DOMAIN-SUFFIX,capcom-europe.com
+- DOMAIN-SUFFIX,capcom-games.com
 - DOMAIN-SUFFIX,monsterhunter.com
+- DOMAIN-SUFFIX,residentevil.com
 - DOMAIN-SUFFIX,streetfighter.com
-
 # Square Enix (Final Fantasy, Dragon Quest, Kingdom Hearts, Nier)
 - DOMAIN-SUFFIX,square-enix.com
 - DOMAIN-SUFFIX,square-enix-games.com
 - DOMAIN-SUFFIX,finalfantasyxiv.com
 - DOMAIN-SUFFIX,ffxiv.com
-- DOMAIN-SUFFIX,dragonquest.com
-
 # SEGA & Atlus (Persona, Yakuza / Like a Dragon, Sonic, Total War)
 - DOMAIN-SUFFIX,sega.com
-- DOMAIN-SUFFIX,sega.co.jp
+- DOMAIN-SUFFIX,sega.co.uk
+- DOMAIN-SUFFIX,sega.jp
 - DOMAIN-SUFFIX,atlus.com
 - DOMAIN-SUFFIX,totalwar.com
-- DOMAIN-SUFFIX,creative-assembly.com
-- DOMAIN-SUFFIX,persona5.jp
-
 # FromSoftware & Konami & Koei Tecmo
-- DOMAIN-SUFFIX,fromsoftware.jp
 - DOMAIN-SUFFIX,konami.com
 - DOMAIN-SUFFIX,konami.net
-- DOMAIN-SUFFIX,konamigames.com
-- DOMAIN-SUFFIX,silenthill.com
-- DOMAIN-SUFFIX,metalgearsolid.com
 - DOMAIN-SUFFIX,koeitecmo.co.jp
 - DOMAIN-SUFFIX,koeitecmoamerica.com
 
@@ -325,19 +295,18 @@ payload:
 # CD Projekt RED (Cyberpunk 2077, Ведьмак / The Witcher)
 - DOMAIN-SUFFIX,cdprojektred.com
 - DOMAIN-SUFFIX,cdprojekt.com
-- DOMAIN-SUFFIX,cyberpunk.net
 - DOMAIN-SUFFIX,thewitcher.com
-
+- DOMAIN-SUFFIX,cyberpunk.net
 # Larian Studios (Baldur's Gate 3, Divinity)
 - DOMAIN-SUFFIX,larian.com
 - DOMAIN-SUFFIX,baldursgate3.game
-
 # Paradox & Techland & Remedy
 - DOMAIN-SUFFIX,paradoxinteractive.com
 - DOMAIN-SUFFIX,paradoxplaza.com
 - DOMAIN-SUFFIX,techland.net
-- DOMAIN-SUFFIX,dyinglightgame.com
+- DOMAIN-SUFFIX,techlandgg.com
 - DOMAIN-SUFFIX,remedygames.com
+- DOMAIN-SUFFIX,alanwake.com
 
 # ==============================================================================
 # 16. ОНЛАЙН-ШУТЕРЫ, ВЫЖИВАЧИ И АЗИАТСКИЕ ММО (TARKOV, PUBG, WAR THUNDER)
@@ -346,22 +315,19 @@ payload:
 - DOMAIN-SUFFIX,escapefromtarkov.com
 - DOMAIN-SUFFIX,tarkov.com
 - DOMAIN-SUFFIX,battlestategames.com
-
+- DOMAIN-SUFFIX,arena.tarkov.com
 # Krafton (PUBG) & Bohemia (Arma, DayZ)
 - DOMAIN-SUFFIX,pubg.com
 - DOMAIN-SUFFIX,krafton.com
-- DOMAIN-SUFFIX,pubgmobile.com
-- DOMAIN-SUFFIX,bohemia.net
 - DOMAIN-SUFFIX,bistudio.com
 - DOMAIN-SUFFIX,dayz.com
-- DOMAIN-SUFFIX,arma3.com
-
+- DOMAIN-SUFFIX,bohemia.net
 # Gaijin Entertainment (War Thunder, Crossout, Enlisted)
 - DOMAIN-SUFFIX,gaijin.net
+- DOMAIN-SUFFIX,gaijinent.com
 - DOMAIN-SUFFIX,warthunder.com
 - DOMAIN-SUFFIX,crossout.net
 - DOMAIN-SUFFIX,enlisted.net
-
 # Nexon, Pearl Abyss, Smilegate, NCSoft
 - DOMAIN-SUFFIX,nexon.com
 - DOMAIN-SUFFIX,nexon.net
@@ -374,7 +340,6 @@ payload:
 - DOMAIN-SUFFIX,playlostark.com
 - DOMAIN-SUFFIX,ncsoft.com
 - DOMAIN-SUFFIX,plaync.com
-
 # Эмуляторы (GameLoop)
 - DOMAIN-SUFFIX,gameloop.com
 - DOMAIN-KEYWORD,gameloop
@@ -383,8 +348,13 @@ payload:
 # 17. МОДДИНГ, СТАТИСТИКА И МАГАЗИНЫ КЛЮЧЕЙ
 # ==============================================================================
 - DOMAIN-SUFFIX,nexusmods.com
+- DOMAIN-SUFFIX,modrinth.com
+- DOMAIN-SUFFIX,modrinth.gg
+- DOMAIN-SUFFIX,itch.io
+- DOMAIN-SUFFIX,itch.zone
+- DOMAIN-SUFFIX,chess.com
+- DOMAIN-SUFFIX,chesscomfiles.com
 - DOMAIN-SUFFIX,curseforge.com
-- DOMAIN-SUFFIX,cursecdn.com
 - DOMAIN-SUFFIX,moddb.com
 - DOMAIN-SUFFIX,steamdb.info
 - DOMAIN-SUFFIX,humblebundle.com
@@ -399,18 +369,81 @@ payload:
 - DOMAIN-SUFFIX,faceit.com
 - DOMAIN-SUFFIX,faceitcdn.net
 - DOMAIN-SUFFIX,gog.com
-- DOMAIN-SUFFIX,gog-statics.com
 - DOMAIN-SUFFIX,wargaming.net
 - DOMAIN-SUFFIX,worldoftanks.eu
+- DOMAIN-SUFFIX,wargaming.com
+- DOMAIN-SUFFIX,worldofwarships.eu
+- DOMAIN-SUFFIX,worldofwarships.com
+- DOMAIN-SUFFIX,worldoftanks.com
+- DOMAIN-SUFFIX,worldofwarplanes.eu
 
 # ==============================================================================
-# КАПЧА ВХОДА ROBLOX/EA И ДОПОЛНИТЕЛЬНЫЕ ИГРОВЫЕ СЕРВИСЫ
+# 19. ИГРЫ С ЖЕСТКИМ ГЕОБЛОКОМ РФ (STALKER 2, POE 1/2, WARFRAME, NIANTIC)
 # ==============================================================================
-- DOMAIN-SUFFIX,arkoselabs.com
-- DOMAIN-SUFFIX,arkose.com
-- DOMAIN-SUFFIX,chess.com
-- DOMAIN-SUFFIX,chesscomfiles.com
-- DOMAIN-SUFFIX,itch.io
-- DOMAIN-SUFFIX,itch.zone
-- DOMAIN-SUFFIX,modrinth.com
-- DOMAIN-SUFFIX,modrinth.gg
+# S.T.A.L.K.E.R. 2 & GSC Game World (полный запрет доступа с российских IP)
+- DOMAIN-SUFFIX,stalker2.com
+- DOMAIN-SUFFIX,gsc-game.com
+- DOMAIN-SUFFIX,stalker-game.com
+# Path of Exile 1 & 2 (Grinding Gear Games - защита от блокировок ECH/ТСПУ)
+- DOMAIN-SUFFIX,pathofexile.com
+- DOMAIN-SUFFIX,pathofexile2.com
+- DOMAIN-SUFFIX,grindinggear.com
+# Digital Extremes (Warframe - обход региональных ограничений и платежей)
+- DOMAIN-SUFFIX,warframe.com
+- DOMAIN-SUFFIX,digitalextremes.com
+# Niantic (Pokemon GO, Monster Hunter Now - полный блок серверов в РФ)
+- DOMAIN-SUFFIX,nianticlabs.com
+- DOMAIN-SUFFIX,pokemongolive.com
+- DOMAIN-SUFFIX,monsterhunternow.com
+
+# ==============================================================================
+# 20. СОВРЕМЕННЫЕ ОНЛАЙН-ШУТЕРЫ И СЕССИОНКИ (THE FINALS, DELTA FORCE, DBD, HELLDIVERS)
+# ==============================================================================
+# Level Infinite & Tencent (Delta Force: Hawk Ops, Arena Breakout, Nikke)
+- DOMAIN-SUFFIX,levelinfinite.com
+- DOMAIN-SUFFIX,playdeltaforce.com
+- DOMAIN-SUFFIX,arenabreakoutinfinite.com
+- DOMAIN-SUFFIX,nikke-en.com
+- DOMAIN-SUFFIX,nikke-kr.com
+- DOMAIN-SUFFIX,toweroffantasy-global.com
+# Embark Studios (The Finals, Arc Raiders)
+- DOMAIN-SUFFIX,reachthefinals.com
+- DOMAIN-SUFFIX,embark-studios.com
+- DOMAIN-SUFFIX,embark.games
+# Behaviour Interactive (Dead by Daylight)
+- DOMAIN-SUFFIX,deadbydaylight.com
+- DOMAIN-SUFFIX,bhvr.com
+- DOMAIN-SUFFIX,behaviour.com
+# Arrowhead Game Studios (Helldivers 2)
+- DOMAIN-SUFFIX,helldivers.com
+- DOMAIN-SUFFIX,arrowheadgamestudios.com
+# Facepunch Studios (Rust) & Pocketpair (Palworld)
+- DOMAIN-SUFFIX,facepunch.com
+- DOMAIN-SUFFIX,pocketpair.jp
+
+# ==============================================================================
+# 21. ММО, КОСМИЧЕСКИЕ И ВЫЖИВАЧИ (STAR CITIZEN, EVE ONLINE, GUILD WARS 2, AMAZON)
+# ==============================================================================
+# Cloud Imperium Games (Star Citizen)
+- DOMAIN-SUFFIX,robertsspaceindustries.com
+- DOMAIN-SUFFIX,cloudimperiumgames.com
+# CCP Games (EVE Online)
+- DOMAIN-SUFFIX,eveonline.com
+- DOMAIN-SUFFIX,ccpgames.com
+# ArenaNet (Guild Wars 2 - блок авторизации и аккаунтов из РФ)
+- DOMAIN-SUFFIX,guildwars2.com
+- DOMAIN-SUFFIX,guildwars.com
+- DOMAIN-SUFFIX,arenanet.com
+# Amazon Games (New World, Throne and Liberty Global, Lost Ark Global)
+- DOMAIN-SUFFIX,amazongames.com
+- DOMAIN-SUFFIX,newworld.com
+- DOMAIN-SUFFIX,playthroneandliberty.com
+
+# Дополнения (CDN, GFN, EA Play)
+- DOMAIN-SUFFIX,bnetcmsus-a.akamaihd.net
+- DOMAIN-SUFFIX,eaplay.com
+- DOMAIN-SUFFIX,2kgames.com
+- DOMAIN-SUFFIX,riotcdn.com
+- DOMAIN-SUFFIX,rdatasvc.net
+- DOMAIN-SUFFIX,geforcenow.com
+- DOMAIN-SUFFIX,helpshift.com
