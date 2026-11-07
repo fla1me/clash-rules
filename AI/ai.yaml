@@ -21,29 +21,29 @@ payload:
 # Скрипты интерфейса Claude, ChatGPT и Perplexity тайно запрашивают эти служебные API
 # для сверки реального IP браузера. Направление в туннель AI предотвращает бан аккаунтов!
 # ==============================================================================
-- DOMAIN-SUFFIX,ipinfo.io
-- DOMAIN-SUFFIX,ipify.org
-- DOMAIN-SUFFIX,ip-api.com
-- DOMAIN-SUFFIX,ipdata.co
-- DOMAIN-SUFFIX,extreme-ip-lookup.com
-- DOMAIN-SUFFIX,icanhazip.com
-- DOMAIN-SUFFIX,ifconfig.me
-- DOMAIN-SUFFIX,ifconfig.co
-- DOMAIN-SUFFIX,ip.sb
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,ipdata.co
+  - DOMAIN-SUFFIX,extreme-ip-lookup.com
+  - DOMAIN-SUFFIX,icanhazip.com
+  - DOMAIN-SUFFIX,ifconfig.me
+  - DOMAIN-SUFFIX,ifconfig.co
+  - DOMAIN-SUFFIX,ip.sb
 
 # ==============================================================================
 # 2. ЗАЩИТА ОТ УТЕЧКИ РЕАЛЬНОГО IP ЧЕРЕЗ WEBRTC (STUN / TURN)
 # Браузеры и голосовые AI-клиенты запрашивают эти STUN-серверы для обнаружения
 # публичного IP (ICE candidates). Перенаправление через прокси предотвращает утечку RU IP!
 # ==============================================================================
-- DOMAIN,stun.l.google.com
-- DOMAIN,stun1.l.google.com
-- DOMAIN,stun2.l.google.com
-- DOMAIN,stun3.l.google.com
-- DOMAIN,stun4.l.google.com
-- DOMAIN,stun.cloudflare.com
-- DOMAIN-SUFFIX,stun.twilio.com
-- DOMAIN-SUFFIX,stun.services.mozilla.com
+  - DOMAIN,stun.l.google.com
+  - DOMAIN,stun1.l.google.com
+  - DOMAIN,stun2.l.google.com
+  - DOMAIN,stun3.l.google.com
+  - DOMAIN,stun4.l.google.com
+  - DOMAIN,stun.cloudflare.com
+  - DOMAIN-SUFFIX,stun.twilio.com
+  - DOMAIN-SUFFIX,stun.services.mozilla.com
 
 # ==============================================================================
 # 3. АНТИ-ДЕТЕКТ, БРАУЗЕРНЫЙ ФИНГЕРПРИНТ, CAPTCHA И АНТИФРОД
@@ -51,26 +51,26 @@ payload:
 # Arkose Labs (OpenAI), Turnstile (Claude/OpenAI), FingerprintJS, Castle, Persona
 # ==============================================================================
 # Arkose Labs (FunCaptcha) — главный детектор IP и фингерпринта для OpenAI / ChatGPT
-- DOMAIN-SUFFIX,arkoselabs.com
+  - DOMAIN-SUFFIX,arkoselabs.com
 
 # Cloudflare Turnstile & Bot Management — защита от ботов для Claude и OpenAI
-- DOMAIN,challenges.cloudflare.com
-- DOMAIN-SUFFIX,turnstile.cloudflare.com
-- DOMAIN-SUFFIX,cloudflareinsights.com
+  - DOMAIN,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,turnstile.cloudflare.com
+  - DOMAIN-SUFFIX,cloudflareinsights.com
 
 # FingerprintJS Pro & Castle — снятие аппаратных отпечатков и выявление подмены IP
-- DOMAIN-SUFFIX,fingerprint.com
-- DOMAIN-SUFFIX,fpjs.io
-- DOMAIN-SUFFIX,castle.io
-- DOMAIN-SUFFIX,sift.com
+  - DOMAIN-SUFFIX,fingerprint.com
+  - DOMAIN-SUFFIX,fpjs.io
+  - DOMAIN-SUFFIX,castle.io
+  - DOMAIN-SUFFIX,sift.com
 
 # Persona Identity Verification — верификация аккаунтов и сессий Anthropic (Claude)
-- DOMAIN-SUFFIX,withpersona.com
-- DOMAIN-SUFFIX,persona-images.s3.amazonaws.com
+  - DOMAIN-SUFFIX,withpersona.com
+  - DOMAIN-SUFFIX,persona-images.s3.amazonaws.com
 
 # Вспомогательные капчи AI платформ
-- DOMAIN-SUFFIX,hcaptcha.com
-- DOMAIN-SUFFIX,recaptcha.net
+  - DOMAIN-SUFFIX,hcaptcha.com
+  - DOMAIN-SUFFIX,recaptcha.net
 
 # ==============================================================================
 # 4. РЕГИОНАЛЬНЫЕ ГЕЙТКЕПЕРЫ, ФИЧЕ-ФЛАГИ И ТЕЛЕМЕТРИЯ (КРИТИЧЕСКИ ДЛЯ CLAUDE И OPENAI)
@@ -78,363 +78,363 @@ payload:
 # Если запрос пойдет мимо прокси — фронтенд мгновенно заблокирует доступ по региону!
 # ==============================================================================
 # Statsig — главный гео-гейткепер Claude (определяет country_code и выводит заглушку)
-- DOMAIN-SUFFIX,statsig.com
-- DOMAIN-SUFFIX,statsigapi.net
-- DOMAIN-SUFFIX,featuregates.org
-- DOMAIN-SUFFIX,featureassets.org
+  - DOMAIN-SUFFIX,statsig.com
+  - DOMAIN-SUFFIX,statsigapi.net
+  - DOMAIN-SUFFIX,featuregates.org
+  - DOMAIN-SUFFIX,featureassets.org
 
 # LaunchDarkly — региональный гейтинг функций и моделей OpenAI (ChatGPT)
-- DOMAIN-SUFFIX,launchdarkly.com
+  - DOMAIN-SUFFIX,launchdarkly.com
 
 # Honeycomb.io — скрытый распределенный трейсинг Anthropic / Claude
-- DOMAIN-SUFFIX,honeycomb.io
+  - DOMAIN-SUFFIX,honeycomb.io
 
 # Datadog RUM — трекинг пользовательских сессий Claude и Perplexity в реальном времени
-- DOMAIN-SUFFIX,datadoghq.com
-- DOMAIN,browser-intake-datadoghq.com
+  - DOMAIN-SUFFIX,datadoghq.com
+  - DOMAIN,browser-intake-datadoghq.com
 
 # Sentry SDK — сбор клиентских ошибок с фиксацией IP в Claude и ChatGPT
-- DOMAIN-SUFFIX,sentry.io
-- DOMAIN,browser.sentry-cdn.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN,browser.sentry-cdn.com
 
 # Fathom Analytics — критичен для рендеринга и работы интерфейса Claude AI
-- DOMAIN,cdn.usefathom.com
+  - DOMAIN,cdn.usefathom.com
 
 # Stripe Radar — антифрод устройства и детекция IP при оплате подписок Plus/Pro
-- DOMAIN-SUFFIX,stripe.network
-- DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,stripe.network
+  - DOMAIN-SUFFIX,stripe.com
 
 # Сегментация и пользовательская телеметрия AI сервисов
-- DOMAIN-SUFFIX,segment.io
-- DOMAIN-SUFFIX,segment.com
-- DOMAIN-SUFFIX,intercom.io
-- DOMAIN-SUFFIX,intercomcdn.com
-- DOMAIN-SUFFIX,intercomassets.com
-- DOMAIN-SUFFIX,posthog.com
-- DOMAIN-SUFFIX,mixpanel.com
-- DOMAIN-SUFFIX,amplitude.com
-- DOMAIN-SUFFIX,vercel-insights.com
-- DOMAIN-SUFFIX,clarity.ms
-- DOMAIN,in.appcenter.ms
-- DOMAIN,app.adjust.com
+  - DOMAIN-SUFFIX,segment.io
+  - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN-SUFFIX,intercomcdn.com
+  - DOMAIN-SUFFIX,intercomassets.com
+  - DOMAIN-SUFFIX,posthog.com
+  - DOMAIN-SUFFIX,mixpanel.com
+  - DOMAIN-SUFFIX,amplitude.com
+  - DOMAIN-SUFFIX,vercel-insights.com
+  - DOMAIN-SUFFIX,clarity.ms
+  - DOMAIN,in.appcenter.ms
+  - DOMAIN,app.adjust.com
 
 # ==============================================================================
 # 5. АВТОРИЗАЦИЯ, АККАУНТЫ И SSO (GOOGLE / MICROSOFT / APPLE / AUTH0)
 # Предотвращает получение сессионных токенов с меткой региона RU (gl=RU)
 # ==============================================================================
 # Google Accounts & OAuth (критично для Gemini, AI Studio, Antigravity)
-- DOMAIN,accounts.google.com
-- DOMAIN,myaccount.google.com
-- DOMAIN,oauth2.googleapis.com
-- DOMAIN,identitytoolkit.googleapis.com
-- DOMAIN,passkeys.google.com
-- DOMAIN,apis.google.com
+  - DOMAIN,accounts.google.com
+  - DOMAIN,myaccount.google.com
+  - DOMAIN,oauth2.googleapis.com
+  - DOMAIN,identitytoolkit.googleapis.com
+  - DOMAIN,passkeys.google.com
+  - DOMAIN,apis.google.co           m
 
 # Microsoft Live / Azure SSO (для GitHub Copilot и входа в OpenAI через Microsoft)
-- DOMAIN,login.microsoftonline.com
-- DOMAIN,login.live.com
+  - DOMAIN,login.microsoftonline.com
+  - DOMAIN,login.live.com
 
 # Apple ID (для авторизации через Sign in with Apple в ChatGPT и Claude)
-- DOMAIN,appleid.apple.com
+  - DOMAIN,appleid.apple.com
 
 # Специализированные AI провайдеры авторизации (Cursor, Perplexity, v0)
-- DOMAIN-SUFFIX,auth0.com
-- DOMAIN-SUFFIX,clerk.com
-- DOMAIN-SUFFIX,clerk.dev
-- DOMAIN-SUFFIX,clerk.services
-- DOMAIN-SUFFIX,supabase.co
-- DOMAIN-SUFFIX,workos.com
+  - DOMAIN-SUFFIX,auth0.com
+  - DOMAIN-SUFFIX,clerk.com
+  - DOMAIN-SUFFIX,clerk.dev
+  - DOMAIN-SUFFIX,clerk.services
+  - DOMAIN-SUFFIX,supabase.co
+  - DOMAIN-SUFFIX,workos.com
 
 # ==============================================================================
 # 6. WEBRTC ГОЛОСОВЫЕ РЕЖИМЫ, ADVANCED VOICE И СИНТЕЗ РЕЧИ
 # ==============================================================================
 # LiveKit Cloud (WebRTC-инфраструктура реального времени для ChatGPT Voice)
-- DOMAIN-SUFFIX,livekit.cloud
-- DOMAIN-SUFFIX,livekit.io
+  - DOMAIN-SUFFIX,livekit.cloud
+  - DOMAIN-SUFFIX,livekit.io
 
 # Deepgram & ElevenLabs (голосовые агенты и генерация речи)
-- DOMAIN-SUFFIX,deepgram.com
-- DOMAIN-SUFFIX,elevenlabs.io
-- DOMAIN,us-central1-xi-labs.cloudfunctions.net
+  - DOMAIN-SUFFIX,deepgram.com
+  - DOMAIN-SUFFIX,elevenlabs.io
+  - DOMAIN,us-central1-xi-labs.cloudfunctions.net
 
 # ==============================================================================
 # 7. ANTHROPIC / CLAUDE AI
 # ==============================================================================
-- DOMAIN-SUFFIX,anthropic.com
-- DOMAIN-SUFFIX,claude.ai
-- DOMAIN-SUFFIX,claude.com
-- DOMAIN-SUFFIX,claudeusercontent.com
-- DOMAIN-SUFFIX,claude-cdn.com
-- DOMAIN,servd-anthropic-website.b-cdn.net
-- DOMAIN,anthropic.gallerycdn.vsassets.io
-- DOMAIN-KEYWORD,anthropic
-- DOMAIN-KEYWORD,claude
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,claude-cdn.com
+  - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,anthropic.gallerycdn.vsassets.io
+  - DOMAIN-KEYWORD,anthropic
+  - DOMAIN-KEYWORD,claude
 
 # ==============================================================================
 # 8. GOOGLE AI / ANTIGRAVITY / CLOUD CODE ASSIST / GEMINI / DEEPMIND
 # ==============================================================================
 # Google Antigravity & Gemini Code Assist (IDE / генерация кода)
-- DOMAIN-KEYWORD,antigravity
-- DOMAIN-KEYWORD,cloudcode
-- DOMAIN-SUFFIX,antigravity.google
-- DOMAIN-SUFFIX,antigravity.goog
-- DOMAIN-SUFFIX,antigravity-unleash.goog
-- DOMAIN,antigravity-pa.googleapis.com
-- DOMAIN,antigravity.googleapis.com
-- DOMAIN,cloudaicompanion.googleapis.com
-- DOMAIN,cloudcode-pa.googleapis.com
-- DOMAIN,daily-cloudcode-pa.googleapis.com
-- DOMAIN,aicode.googleapis.com
-- DOMAIN-SUFFIX,instantmessaging-pa.googleapis.com
+  - DOMAIN-KEYWORD,antigravity
+  - DOMAIN-KEYWORD,cloudcode
+  - DOMAIN-SUFFIX,antigravity.google
+  - DOMAIN-SUFFIX,antigravity.goog
+  - DOMAIN-SUFFIX,antigravity-unleash.goog
+  - DOMAIN,antigravity-pa.googleapis.com
+  - DOMAIN,antigravity.googleapis.com
+  - DOMAIN,cloudaicompanion.googleapis.com
+  - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,daily-cloudcode-pa.googleapis.com
+  - DOMAIN,aicode.googleapis.com
+  - DOMAIN-SUFFIX,instantmessaging-pa.googleapis.com
 
 # IAM, валидация токенов и сервисные API Google Cloud для Antigravity
-- DOMAIN,cloudresourcemanager.googleapis.com
-- DOMAIN,serviceusage.googleapis.com
-- DOMAIN,iamcredentials.googleapis.com
-- DOMAIN,developerconnect.googleapis.com
-- DOMAIN,waa-pa.clients6.google.com
+  - DOMAIN,cloudresourcemanager.googleapis.com
+  - DOMAIN,serviceusage.googleapis.com
+  - DOMAIN,iamcredentials.googleapis.com
+  - DOMAIN,developerconnect.googleapis.com
+  - DOMAIN,waa-pa.clients6.google.com
 
 # Gemini, AI Studio, DeepMind, NotebookLM
-- DOMAIN-SUFFIX,deepmind.com
-- DOMAIN-SUFFIX,deepmind.google
-- DOMAIN-SUFFIX,gemini.google
-- DOMAIN-SUFFIX,gemini.google.com
-- DOMAIN-SUFFIX,aistudio.google.com
-- DOMAIN-SUFFIX,makersuite.google.com
-- DOMAIN-SUFFIX,notebooklm.google
-- DOMAIN-SUFFIX,notebooklm.google.com
-- DOMAIN-SUFFIX,generativeai.google
-- DOMAIN-SUFFIX,ai.google.dev
-- DOMAIN-SUFFIX,ai.google
-- DOMAIN-SUFFIX,ai.google.com
-- DOMAIN-SUFFIX,jules.google
-- DOMAIN-SUFFIX,jules.google.com
-- DOMAIN-SUFFIX,labs.google
-- DOMAIN-SUFFIX,experiments.withgoogle.com
-- DOMAIN,bard.google.com
-- DOMAIN,imagefx.google
-- DOMAIN,fx.google.com
-- DOMAIN,stitch.withgoogle.com
-- DOMAIN,musicfx.withgoogle.com
-- DOMAIN,textfx.withgoogle.com
-- DOMAIN,g.co
+  - DOMAIN-SUFFIX,deepmind.com
+  - DOMAIN-SUFFIX,deepmind.google
+  - DOMAIN-SUFFIX,gemini.google
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,makersuite.google.com
+  - DOMAIN-SUFFIX,notebooklm.google
+  - DOMAIN-SUFFIX,notebooklm.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,ai.google
+  - DOMAIN-SUFFIX,ai.google.com
+  - DOMAIN-SUFFIX,jules.google
+  - DOMAIN-SUFFIX,jules.google.com
+  - DOMAIN-SUFFIX,labs.google
+  - DOMAIN-SUFFIX,experiments.withgoogle.com
+  - DOMAIN,bard.google.com
+  - DOMAIN,imagefx.google
+  - DOMAIN,fx.google.com
+  - DOMAIN,stitch.withgoogle.com
+  - DOMAIN,musicfx.withgoogle.com
+  - DOMAIN,textfx.withgoogle.com
+  - DOMAIN,g.co
 
 # Бэкенды и инференс Google AI
-- DOMAIN,generativelanguage.googleapis.com
-- DOMAIN,content-generativelanguage.googleapis.com
-- DOMAIN,alkalimakersuite-pa.googleapis.com
-- DOMAIN,alkalimakersuite-pa.clients6.google.com
-- DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-- DOMAIN,aisandbox-pa.googleapis.com
-- DOMAIN,geller-pa.googleapis.com
-- DOMAIN,proactivebackend-pa.googleapis.com
-- DOMAIN,robinfrontend-pa.googleapis.com
-- DOMAIN,aida.googleapis.com
-- DOMAIN,aiplatform.googleapis.com
-- DOMAIN,idx.google.com
-- DOMAIN,developerprofiles.google.com
-- DOMAIN,speechs3proto2-pa.googleapis.com
-- DOMAIN,firebaseinstallations.googleapis.com
-- DOMAIN,firebaseremoteconfig.googleapis.com
-- DOMAIN-KEYWORD,gemini
+  - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN,content-generativelanguage.googleapis.com
+  - DOMAIN,alkalimakersuite-pa.googleapis.com
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,aisandbox-pa.googleapis.com
+  - DOMAIN,geller-pa.googleapis.com
+  - DOMAIN,proactivebackend-pa.googleapis.com
+  - DOMAIN,robinfrontend-pa.googleapis.com
+  - DOMAIN,aida.googleapis.com
+  - DOMAIN,aiplatform.googleapis.com
+  - DOMAIN,idx.google.com
+  - DOMAIN,developerprofiles.google.com
+  - DOMAIN,speechs3proto2-pa.googleapis.com
+  - DOMAIN,firebaseinstallations.googleapis.com
+  - DOMAIN,firebaseremoteconfig.googleapis.com
+  - DOMAIN-KEYWORD,gemini
 
 # ==============================================================================
 # 9. OPENAI / CHATGPT / SORA / OPERATOR / SEARCHGPT
 # ==============================================================================
-- DOMAIN-SUFFIX,chatgpt.com
-- DOMAIN-SUFFIX,chat.com
-- DOMAIN-SUFFIX,ai.com
-- DOMAIN-SUFFIX,chatgpt.site
-- DOMAIN-SUFFIX,gpt3-openai.com
-- DOMAIN-SUFFIX,oaistatic.com
-- DOMAIN-SUFFIX,oaiusercontent.com
-- DOMAIN-SUFFIX,openai.com
-- DOMAIN,openai.fund
-- DOMAIN,openai.org
-- DOMAIN-SUFFIX,sora.com
-- DOMAIN-SUFFIX,searchgpt.com
-- DOMAIN,openaicom.imgix.net
-- DOMAIN,production-openaicom-storage.azureedge.net
-- DOMAIN,openaicomproductionae4b.blob.core.windows.net
-- DOMAIN-KEYWORD,openai
-- DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,chat.com
+  - DOMAIN-SUFFIX,ai.com
+  - DOMAIN-SUFFIX,chatgpt.site
+  - DOMAIN-SUFFIX,gpt3-openai.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN,openai.fund
+  - DOMAIN,openai.org
+  - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-SUFFIX,searchgpt.com
+  - DOMAIN,openaicom.imgix.net
+  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,chatgpt
 
 # ==============================================================================
 # 10. MICROSOFT / GITHUB COPILOT / DESIGNER
 # ==============================================================================
-- DOMAIN-SUFFIX,githubcopilot.com
-- DOMAIN-SUFFIX,copilot.microsoft.com
-- DOMAIN-SUFFIX,copilot.com
-- DOMAIN-SUFFIX,copilot.fun
-- DOMAIN-SUFFIX,designer.microsoft.com
-- DOMAIN-SUFFIX,designerapp.office.com
-- DOMAIN,copilot-proxy.githubusercontent.com
-- DOMAIN,copilot-telemetry.githubusercontent.com
-- DOMAIN,origin-tracker.githubusercontent.com
-- DOMAIN,api.github.com
-- DOMAIN,sydney.bing.com
-- DOMAIN,copilot.bing.com
-- DOMAIN,edgeservices.bing.com
-- DOMAIN-SUFFIX,bingapis.com
-- DOMAIN,r.bing.com
-- DOMAIN,default.exp-tas.com
-- DOMAIN,dual-a-0001.a-msedge.net
-- DOMAIN,acctcdnmsftuswe2.azureedge.net
-- DOMAIN,acctcdnvzeuno.azureedge.net
-- DOMAIN,lgincdnmsftuswe2.azureedge.net
-- DOMAIN,lgincdnvzeuno.azureedge.net
-- DOMAIN,sapphire.api.microsoftapp.net
-- DOMAIN-SUFFIX,sapphire.microsoftapp.net
-- DOMAIN,gateway.bingviz.microsoftapp.net
-- DOMAIN,edge.microsoft.com
-- DOMAIN,fpt2.microsoft.com
-- DOMAIN,location.microsoft.com
-- DOMAIN-SUFFIX,events.data.microsoft.com
-- DOMAIN,d.docs.live.net
-- DOMAIN-KEYWORD,copilot
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,copilot.com
+  - DOMAIN-SUFFIX,copilot.fun
+  - DOMAIN-SUFFIX,designer.microsoft.com
+  - DOMAIN-SUFFIX,designerapp.office.com
+  - DOMAIN,copilot-proxy.githubusercontent.com
+  - DOMAIN,copilot-telemetry.githubusercontent.com
+  - DOMAIN,origin-tracker.githubusercontent.com
+  - DOMAIN,api.github.com
+  - DOMAIN,sydney.bing.com
+  - DOMAIN,copilot.bing.com
+  - DOMAIN,edgeservices.bing.com
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN,r.bing.com
+  - DOMAIN,default.exp-tas.com
+  - DOMAIN,dual-a-0001.a-msedge.net
+  - DOMAIN,acctcdnmsftuswe2.azureedge.net
+  - DOMAIN,acctcdnvzeuno.azureedge.net
+  - DOMAIN,lgincdnmsftuswe2.azureedge.net
+  - DOMAIN,lgincdnvzeuno.azureedge.net
+  - DOMAIN,sapphire.api.microsoftapp.net
+  - DOMAIN-SUFFIX,sapphire.microsoftapp.net
+  - DOMAIN,gateway.bingviz.microsoftapp.net
+  - DOMAIN,edge.microsoft.com
+  - DOMAIN,fpt2.microsoft.com
+  - DOMAIN,location.microsoft.com
+  - DOMAIN-SUFFIX,events.data.microsoft.com
+  - DOMAIN,d.docs.live.net
+  - DOMAIN-KEYWORD,copilot
 
 # ==============================================================================
 # 11. AI IDE, РЕДАКТОРЫ КОДА И АССИСТЕНТЫ
 # Cursor / Windsurf / Zed / Trae / Cline / Devin / Aider / Supermaven
 # ==============================================================================
 # Cursor AI & Anysphere
-- DOMAIN-SUFFIX,cursor.sh
-- DOMAIN-SUFFIX,cursor.com
-- DOMAIN-SUFFIX,cursorapi.com
-- DOMAIN-SUFFIX,cursor-cdn.com
-- DOMAIN-SUFFIX,anysphere.co
-- DOMAIN-SUFFIX,anysphere-backend.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,cursor-cdn.com
+  - DOMAIN-SUFFIX,anysphere.co
+  - DOMAIN-SUFFIX,anysphere-backend.com
 
 # Windsurf & Codeium
-- DOMAIN-SUFFIX,codeium.com
-- DOMAIN-SUFFIX,windsurf.ai
+  - DOMAIN-SUFFIX,codeium.com
+  - DOMAIN-SUFFIX,windsurf.ai
 
 # Zed AI
-- DOMAIN-SUFFIX,zed.dev
+  - DOMAIN-SUFFIX,zed.dev
 
 # Trae AI (ByteDance)
-- DOMAIN-SUFFIX,trae.ai
+  - DOMAIN-SUFFIX,trae.ai
 
 # Continue
-- DOMAIN-SUFFIX,continue.dev
+  - DOMAIN-SUFFIX,continue.dev
 
 # Cline & Roo Code
-- DOMAIN-SUFFIX,cline.bot
-- DOMAIN-SUFFIX,roo.dev
+  - DOMAIN-SUFFIX,cline.bot
+  - DOMAIN-SUFFIX,roo.dev
 
 # Supermaven
-- DOMAIN-SUFFIX,supermaven.com
+  - DOMAIN-SUFFIX,supermaven.com
 
 # Tabnine
-- DOMAIN-SUFFIX,tabnine.com
+  - DOMAIN-SUFFIX,tabnine.com
 
 # Sourcegraph Cody
-- DOMAIN-SUFFIX,cody.dev
-- DOMAIN-SUFFIX,sourcegraph.com
+  - DOMAIN-SUFFIX,cody.dev
+  - DOMAIN-SUFFIX,sourcegraph.com
 
 # Augment Code & Devin AI
-- DOMAIN-SUFFIX,augmentcode.com
-- DOMAIN-SUFFIX,cognition.ai
-- DOMAIN-SUFFIX,devin.ai
+  - DOMAIN-SUFFIX,augmentcode.com
+  - DOMAIN-SUFFIX,cognition.ai
+  - DOMAIN-SUFFIX,devin.ai
 
 # Aider
-- DOMAIN-SUFFIX,aider.chat
+  - DOMAIN-SUFFIX,aider.chat
 
 # ZCode
-- DOMAIN-SUFFIX,zcode.ai
-- DOMAIN-SUFFIX,zcodesystem.com
-- DOMAIN-KEYWORD,zcode
+  - DOMAIN-SUFFIX,zcode.ai
+  - DOMAIN-SUFFIX,zcodesystem.com
+  - DOMAIN-KEYWORD,zcode
 
 # ==============================================================================
 # 12. ДРУГИЕ ИИ-СЕРВИСЫ, АГРЕГАТОРЫ И ГЕНЕРАТОРЫ (2025-2026)
 # ==============================================================================
 # OpenRouter
-- DOMAIN-SUFFIX,openrouter.ai
+  - DOMAIN-SUFFIX,openrouter.ai
 
 # Платформы генерации приложений (Full-stack AI)
-- DOMAIN-SUFFIX,bolt.new
-- DOMAIN-SUFFIX,lovable.dev
-- DOMAIN-SUFFIX,replit.com
-- DOMAIN-SUFFIX,replit.dev
-- DOMAIN-SUFFIX,v0.dev
+  - DOMAIN-SUFFIX,bolt.new
+  - DOMAIN-SUFFIX,lovable.dev
+  - DOMAIN-SUFFIX,replit.com
+  - DOMAIN-SUFFIX,replit.dev
+  - DOMAIN-SUFFIX,v0.dev
 
 # Perplexity AI
-- DOMAIN-SUFFIX,perplexity.ai
-- DOMAIN-SUFFIX,pplx.ai
-- DOMAIN,perplexity-ai.cloudflareaccess.com
-- DOMAIN-KEYWORD,perplexity
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,pplx.ai
+  - DOMAIN,perplexity-ai.cloudflareaccess.com
+  - DOMAIN-KEYWORD,perplexity
 
 # Grok & xAI
-- DOMAIN-SUFFIX,grok.com
-- DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,x.ai
 
 # DeepSeek
-- DOMAIN-SUFFIX,deepseek.com
-- DOMAIN-SUFFIX,deepseeksvc.com
-- DOMAIN-KEYWORD,deepseek
+  - DOMAIN-SUFFIX,deepseek.com
+  - DOMAIN-SUFFIX,deepseeksvc.com
+  - DOMAIN-KEYWORD,deepseek
 
 # Генерация медиа (Видео, Картинки, 3D, Звук)
-- DOMAIN-SUFFIX,midjourney.com
-- DOMAIN-SUFFIX,klingai.com
-- DOMAIN-SUFFIX,klingai.org
-- DOMAIN-SUFFIX,hailuoai.com
-- DOMAIN-SUFFIX,minimax.io
-- DOMAIN-SUFFIX,vidu.studio
-- DOMAIN-SUFFIX,seaart.ai
-- DOMAIN-SUFFIX,tripo3d.ai
-- DOMAIN-SUFFIX,meshy.ai
-- DOMAIN-SUFFIX,ideogram.ai
-- DOMAIN-SUFFIX,leonardo.ai
-- DOMAIN-SUFFIX,pika.art
-- DOMAIN-SUFFIX,runwayml.com
-- DOMAIN-SUFFIX,runway.com
-- DOMAIN-SUFFIX,luma.ai
-- DOMAIN-SUFFIX,lumalabs.ai
-- DOMAIN-SUFFIX,flux.ai
-- DOMAIN-SUFFIX,bfl.ai
-- DOMAIN-SUFFIX,blackforestlabs.ai
-- DOMAIN-SUFFIX,fal.ai
-- DOMAIN-SUFFIX,fal.run
-- DOMAIN-SUFFIX,recraft.ai
-- DOMAIN-SUFFIX,meta.ai
-- DOMAIN-SUFFIX,stability.ai
-- DOMAIN-SUFFIX,replicate.com
-- DOMAIN-SUFFIX,replicate.delivery
-- DOMAIN-SUFFIX,suno.com
-- DOMAIN-SUFFIX,suno.ai
-- DOMAIN-SUFFIX,udio.com
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,klingai.com
+  - DOMAIN-SUFFIX,klingai.org
+  - DOMAIN-SUFFIX,hailuoai.com
+  - DOMAIN-SUFFIX,minimax.io
+  - DOMAIN-SUFFIX,vidu.studio
+  - DOMAIN-SUFFIX,seaart.ai
+  - DOMAIN-SUFFIX,tripo3d.ai
+  - DOMAIN-SUFFIX,meshy.ai
+  - DOMAIN-SUFFIX,ideogram.ai
+  - DOMAIN-SUFFIX,leonardo.ai
+  - DOMAIN-SUFFIX,pika.art
+  - DOMAIN-SUFFIX,runwayml.com
+  - DOMAIN-SUFFIX,runway.com
+  - DOMAIN-SUFFIX,luma.ai
+  - DOMAIN-SUFFIX,lumalabs.ai
+  - DOMAIN-SUFFIX,flux.ai
+  - DOMAIN-SUFFIX,bfl.ai
+  - DOMAIN-SUFFIX,blackforestlabs.ai
+  - DOMAIN-SUFFIX,fal.ai
+  - DOMAIN-SUFFIX,fal.run
+  - DOMAIN-SUFFIX,recraft.ai
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,stability.ai
+  - DOMAIN-SUFFIX,replicate.com
+  - DOMAIN-SUFFIX,replicate.delivery
+  - DOMAIN-SUFFIX,suno.com
+  - DOMAIN-SUFFIX,suno.ai
+  - DOMAIN-SUFFIX,udio.com
 
 # Платформы моделей, инференс и облака
-- DOMAIN-SUFFIX,huggingface.co
-- DOMAIN-SUFFIX,hf.co
-- DOMAIN-SUFFIX,hf.space
-- DOMAIN-SUFFIX,pirateface.co
-- DOMAIN-SUFFIX,mistral.ai
-- DOMAIN-SUFFIX,cerebras.ai
-- DOMAIN-SUFFIX,hyperbolic.xyz
-- DOMAIN-SUFFIX,groq.com
-- DOMAIN-SUFFIX,together.ai
-- DOMAIN-SUFFIX,together.xyz
-- DOMAIN-SUFFIX,fireworks.ai
-- DOMAIN-SUFFIX,nebius.com
-- DOMAIN-SUFFIX,nebius.ai
-- DOMAIN-SUFFIX,poe.com
-- DOMAIN-SUFFIX,poecdn.net
-- DOMAIN-SUFFIX,warp.dev
-- DOMAIN-SUFFIX,civitai.com
-- DOMAIN-SUFFIX,cohere.com
-- DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,hf.co
+  - DOMAIN-SUFFIX,hf.space
+  - DOMAIN-SUFFIX,pirateface.co
+  - DOMAIN-SUFFIX,mistral.ai
+  - DOMAIN-SUFFIX,cerebras.ai
+  - DOMAIN-SUFFIX,hyperbolic.xyz
+  - DOMAIN-SUFFIX,groq.com
+  - DOMAIN-SUFFIX,together.ai
+  - DOMAIN-SUFFIX,together.xyz
+  - DOMAIN-SUFFIX,fireworks.ai
+  - DOMAIN-SUFFIX,nebius.com
+  - DOMAIN-SUFFIX,nebius.ai
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,poecdn.net
+  - DOMAIN-SUFFIX,warp.dev
+  - DOMAIN-SUFFIX,civitai.com
+  - DOMAIN-SUFFIX,cohere.com
+  - DOMAIN-SUFFIX,cohere.ai
 
 # Утилиты и продуктивность
-- DOMAIN-SUFFIX,deepl.com
-- DOMAIN-SUFFIX,grammarly.com
-- DOMAIN-SUFFIX,grammarly.io
-- DOMAIN-SUFFIX,canva.com
-- DOMAIN-SUFFIX,canva-apps.com
-- DOMAIN-SUFFIX,notion.so
-- DOMAIN-SUFFIX,notion.com
-- DOMAIN-SUFFIX,notion.site
-- DOMAIN-SUFFIX,kilo.ai
-- DOMAIN-SUFFIX,kiloapps.io
-- DOMAIN-SUFFIX,pollo.ai
-- DOMAIN-SUFFIX,trybons.ai
+  - DOMAIN-SUFFIX,deepl.com
+  - DOMAIN-SUFFIX,grammarly.com
+  - DOMAIN-SUFFIX,grammarly.io
+  - DOMAIN-SUFFIX,canva.com
+  - DOMAIN-SUFFIX,canva-apps.com
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,notion.com
+  - DOMAIN-SUFFIX,notion.site
+  - DOMAIN-SUFFIX,kilo.ai
+  - DOMAIN-SUFFIX,kiloapps.io
+  - DOMAIN-SUFFIX,pollo.ai
+  - DOMAIN-SUFFIX,trybons.ai
