@@ -18,113 +18,113 @@ payload:
 # ==============================================================================
 # 1. SPOTIFY: АВТОРИЗАЦИЯ, САЙТ И СЕРВИСНЫЕ ССЫЛКИ
 # ==============================================================================
-- DOMAIN-SUFFIX,spotify.com
-- DOMAIN-SUFFIX,spoti.fi
-- DOMAIN-SUFFIX,spotify.link
-- DOMAIN-SUFFIX,spotify.app.link
-- DOMAIN-SUFFIX,byspotify.com
-- DOMAIN-SUFFIX,tospotify.com
-- DOMAIN-SUFFIX,spotify-everywhere.com
-- DOMAIN-SUFFIX,spotifycharts.com
-- DOMAIN-SUFFIX,spotifycodes.com
-- DOMAIN-SUFFIX,spotifyforbrands.com
-- DOMAIN-SUFFIX,spotifyjobs.com
-- DOMAIN-SUFFIX,spotify.design
-- DOMAIN-SUFFIX,spotilocal.com
-- DOMAIN-SUFFIX,spotifynewsroom.jp
-- DOMAIN-KEYWORD,spotify
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,spoti.fi
+  - DOMAIN-SUFFIX,spotify.link
+  - DOMAIN-SUFFIX,spotify.app.link
+  - DOMAIN-SUFFIX,byspotify.com
+  - DOMAIN-SUFFIX,tospotify.com
+  - DOMAIN-SUFFIX,spotify-everywhere.com
+  - DOMAIN-SUFFIX,spotifycharts.com
+  - DOMAIN-SUFFIX,spotifycodes.com
+  - DOMAIN-SUFFIX,spotifyforbrands.com
+  - DOMAIN-SUFFIX,spotifyjobs.com
+  - DOMAIN-SUFFIX,spotify.design
+  - DOMAIN-SUFFIX,spotilocal.com
+  - DOMAIN-SUFFIX,spotifynewsroom.jp
+  - DOMAIN-KEYWORD,spotify
 
 # ==============================================================================
 # 2. SPOTIFY: СЕРВЕРЫ АУДИОПОТОКОВ, ОБЛОЖКИ И БЕЗОПАСНЫЙ CDN
 # (Точечные поддомены Akamai/Fastly, исключающие перехват стороннего интернета)
 # ==============================================================================
-- DOMAIN-SUFFIX,scdn.co
-- DOMAIN-SUFFIX,pscdn.co
-- DOMAIN-SUFFIX,spotifycdn.com
-- DOMAIN-SUFFIX,spotifycdn.net
-- DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
-- DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
-- DOMAIN-SUFFIX,spotify-com.akamaized.net
-- DOMAIN,audio4-ak-spotify-com.akamaized.net
-- DOMAIN,heads-ak-spotify-com.akamaized.net
-- DOMAIN,spotify.com.edgesuite.net
-- DOMAIN,spotify.map.fastly.net
-- DOMAIN,spotify.map.fastlylb.net
-- DOMAIN,cdn-spotify-experiments.conductrics.com
-- DOMAIN,b.scorecardresearch.com
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,pscdn.co
+  - DOMAIN-SUFFIX,spotifycdn.com
+  - DOMAIN-SUFFIX,spotifycdn.net
+  - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,spotify-com.akamaized.net
+  - DOMAIN,audio4-ak-spotify-com.akamaized.net
+  - DOMAIN,heads-ak-spotify-com.akamaized.net
+  - DOMAIN,spotify.com.edgesuite.net
+  - DOMAIN,spotify.map.fastly.net
+  - DOMAIN,spotify.map.fastlylb.net
+  - DOMAIN,cdn-spotify-experiments.conductrics.com
+  - DOMAIN,b.scorecardresearch.com
 
 # ==============================================================================
 # 3. TIDAL (HI-FI И MASTER СТРИМИНГ)
 # ==============================================================================
-- DOMAIN-SUFFIX,tidal.com
-- DOMAIN-SUFFIX,tidalhifi.com
-- DOMAIN-SUFFIX,wimpmusic.com
-- DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
+  - DOMAIN-SUFFIX,tidal.com
+  - DOMAIN-SUFFIX,tidalhifi.com
+  - DOMAIN-SUFFIX,wimpmusic.com
+  - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
 
 # ==============================================================================
 # 4. QOBUZ, DEEZER, SOUNDCLOUD, BEATPORT
 # ==============================================================================
 # Qobuz
-- DOMAIN-SUFFIX,qobuz.com
-- DOMAIN-SUFFIX,qobuz.net
-- DOMAIN-KEYWORD,qobuz
+  - DOMAIN-SUFFIX,qobuz.com
+  - DOMAIN-SUFFIX,qobuz.net
+  - DOMAIN-KEYWORD,qobuz
 
 # Deezer
-- DOMAIN-SUFFIX,deezer.com
-- DOMAIN-SUFFIX,dzcdn.net
+  - DOMAIN-SUFFIX,deezer.com
+  - DOMAIN-SUFFIX,dzcdn.net
 
 # SoundCloud
-- DOMAIN-SUFFIX,soundcloud.com
-- DOMAIN-SUFFIX,sndcdn.com
-- DOMAIN-SUFFIX,snd.sc
-- DOMAIN-SUFFIX,soundcloud.cloud
+  - DOMAIN-SUFFIX,soundcloud.com
+  - DOMAIN-SUFFIX,sndcdn.com
+  - DOMAIN-SUFFIX,snd.sc
+  - DOMAIN-SUFFIX,soundcloud.cloud
 
 # Beatport, Mixcloud, TuneIn
-- DOMAIN-SUFFIX,beatport.com
-- DOMAIN-SUFFIX,mixcloud.com
-- DOMAIN-SUFFIX,tunein.com
+  - DOMAIN-SUFFIX,beatport.com
+  - DOMAIN-SUFFIX,mixcloud.com
+  - DOMAIN-SUFFIX,tunein.com
 
 # ==============================================================================
 # 5. BANDCAMP, ТЕКСТЫ ПЕСЕН (GENIUS/MUSIXMATCH) И ШАЗАМ
 # ==============================================================================
-- DOMAIN-SUFFIX,bandcamp.com
-- DOMAIN-SUFFIX,bcbits.com
-- DOMAIN-SUFFIX,genius.com
-- DOMAIN-SUFFIX,musixmatch.com
-- DOMAIN-SUFFIX,shazam.com
+  - DOMAIN-SUFFIX,bandcamp.com
+  - DOMAIN-SUFFIX,bcbits.com
+  - DOMAIN-SUFFIX,genius.com
+  - DOMAIN-SUFFIX,musixmatch.com
+  - DOMAIN-SUFFIX,shazam.com
 
 # ==============================================================================
 # 6. МЕТАДАННЫЕ И СКРОББЛИНГ
 # ==============================================================================
-- DOMAIN-SUFFIX,last.fm
-- DOMAIN-SUFFIX,musicbrainz.org
-- DOMAIN-SUFFIX,metabrainz.org
+  - DOMAIN-SUFFIX,last.fm
+  - DOMAIN-SUFFIX,musicbrainz.org
+  - DOMAIN-SUFFIX,metabrainz.org
 
 # ==============================================================================
 # 7. МУЗЫКАЛЬНЫЙ ШЕРИНГ И АГРЕГАТОРЫ ССЫЛОК (SONGLINK / ODESLI)
 # ==============================================================================
-- DOMAIN-SUFFIX,song.link
-- DOMAIN-SUFFIX,odesli.co
-- DOMAIN-SUFFIX,album.link
-- DOMAIN-SUFFIX,artist.link
-- DOMAIN-SUFFIX,pods.link
+  - DOMAIN-SUFFIX,song.link
+  - DOMAIN-SUFFIX,odesli.co
+  - DOMAIN-SUFFIX,album.link
+  - DOMAIN-SUFFIX,artist.link
+  - DOMAIN-SUFFIX,pods.link
 
 # ==============================================================================
 # 8. СЕТЕВОЙ УРОВЕНЬ, РОУТЕРЫ (OPENWRT) И АВТОРИЗАЦИЯ КЛИЕНТОВ
 # ==============================================================================
 # Фирменный порт Spotify Access Point Protocol (работает на роутерах вместо PROCESS-NAME)
-- DST-PORT,4070
+  - DST-PORT,4070
 
 # Прямые Anycast IP Google Cloud для подключения клиентов Spotify (с no-resolve для роутеров)
-- IP-CIDR,104.154.127.126/32,no-resolve
-- IP-CIDR,35.186.224.47/32,no-resolve
+  - IP-CIDR,104.154.127.126/32,no-resolve
+  - IP-CIDR,35.186.224.47/32,no-resolve
 
 # Моды, спуфинг и утилиты
-- DOMAIN-KEYWORD,spotbye
-- DOMAIN-KEYWORD,spicetify
-- DOMAIN-KEYWORD,spotx
-- DOMAIN-SUFFIX,ipwho.is
-- DOMAIN-KEYWORD,ipwho
+  - DOMAIN-KEYWORD,spotbye
+  - DOMAIN-KEYWORD,spicetify
+  - DOMAIN-KEYWORD,spotx
+  - DOMAIN-SUFFIX,ipwho.is
+  - DOMAIN-KEYWORD,ipwho
 
 # ==============================================================================
 # 9. УТИЛИТЫ СКАЧИВАНИЯ FLAC (SPOTIFLAC, MORNYE, SPOTIDOWNLOADER)
@@ -136,18 +136,18 @@ payload:
 # - Синхронизированные караоке-тексты песен LRCLIB
 # - Метаданные и ISRC-статистика Songstats
 # ==============================================================================
-- DOMAIN-SUFFIX,zarz.moe
-- DOMAIN-SUFFIX,mornye.com
-- DOMAIN-SUFFIX,streamhoarder.app
-- DOMAIN-SUFFIX,spotiflac.com
-- DOMAIN-KEYWORD,spotiflac
-- DOMAIN-KEYWORD,mornye
-- DOMAIN-SUFFIX,qqdl.site
-- DOMAIN-SUFFIX,kinoplus.online
-- DOMAIN-SUFFIX,dabmusic.xyz
-- DOMAIN-SUFFIX,yeet.su
-- DOMAIN-SUFFIX,squid.wtf
-- DOMAIN-SUFFIX,deezmate.com
-- DOMAIN-SUFFIX,afkarxyz.fun
-- DOMAIN-SUFFIX,lrclib.net
-- DOMAIN-SUFFIX,songstats.com
+  - DOMAIN-SUFFIX,zarz.moe
+  - DOMAIN-SUFFIX,mornye.com
+  - DOMAIN-SUFFIX,streamhoarder.app
+  - DOMAIN-SUFFIX,spotiflac.com
+  - DOMAIN-KEYWORD,spotiflac
+  - DOMAIN-KEYWORD,mornye
+  - DOMAIN-SUFFIX,qqdl.site
+  - DOMAIN-SUFFIX,kinoplus.online
+  - DOMAIN-SUFFIX,dabmusic.xyz
+  - DOMAIN-SUFFIX,yeet.su
+  - DOMAIN-SUFFIX,squid.wtf
+  - DOMAIN-SUFFIX,deezmate.com
+  - DOMAIN-SUFFIX,afkarxyz.fun
+  - DOMAIN-SUFFIX,lrclib.net
+  - DOMAIN-SUFFIX,songstats.com
