@@ -24,584 +24,584 @@ payload:
 # криптобиржи, TikTok) скрытно проверяют реальный IP и наличие VPN:
 # ==============================================================================
 # Netflix / LexisNexis ThreatMetrix (детекция VPN и проверка IP для Netflix)
-- DOMAIN-SUFFIX,online-metrix.net
-- DOMAIN-SUFFIX,threatmetrix.com
+  - DOMAIN-SUFFIX,online-metrix.net
+  - DOMAIN-SUFFIX,threatmetrix.com
 
 # Microsoft Location & Fraud Protection (проверка геолокации Windows и Store)
-- DOMAIN,location.microsoft.com
-- DOMAIN,fpt2.microsoft.com
-- DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN,location.microsoft.com
+  - DOMAIN,fpt2.microsoft.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
 
 # Adobe & Autodesk Genuine Check (проверка региона лицензии и блокировок РФ)
-- DOMAIN,genuine.adobe.com
-- DOMAIN,genuine-software.autodesk.com
-- DOMAIN,ipm-provider.autodesk.com
+  - DOMAIN,genuine.adobe.com
+  - DOMAIN,genuine-software.autodesk.com
+  - DOMAIN,ipm-provider.autodesk.com
 
 # DataDome, Sift & Fingerprint (детекция IP/VPN для криптобирж и веб-сервисов)
-- DOMAIN-SUFFIX,datadome.co
-- DOMAIN-SUFFIX,sift.com
-- DOMAIN-SUFFIX,siftscience.com
-- DOMAIN-SUFFIX,fingerprint.com
-- DOMAIN-SUFFIX,fpjs.io
+  - DOMAIN-SUFFIX,datadome.co
+  - DOMAIN-SUFFIX,sift.com
+  - DOMAIN-SUFFIX,siftscience.com
+  - DOMAIN-SUFFIX,fingerprint.com
+  - DOMAIN-SUFFIX,fpjs.io
 
 # Служебные IP/GeoIP API и согласие OneTrust (опрашиваются Netflix, биржами и платформами)
-- DOMAIN-SUFFIX,ipinfo.io
-- DOMAIN-SUFFIX,ip-api.com
-- DOMAIN-SUFFIX,ipapi.co
-- DOMAIN-SUFFIX,ip.sb
-- DOMAIN-SUFFIX,maxmind.com
-- DOMAIN-SUFFIX,onetrust.com
-- DOMAIN-SUFFIX,cookielaw.org
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,ipapi.co
+  - DOMAIN-SUFFIX,ip.sb
+  - DOMAIN-SUFFIX,maxmind.com
+  - DOMAIN-SUFFIX,onetrust.com
+  - DOMAIN-SUFFIX,cookielaw.org
 
 # Защитные капчи и Cloudflare Turnstile сайтов
-- DOMAIN,challenges.cloudflare.com
-- DOMAIN-SUFFIX,turnstile.cloudflare.com
-- DOMAIN-SUFFIX,hcaptcha.com
-- DOMAIN-SUFFIX,recaptcha.net
+  - DOMAIN,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,turnstile.cloudflare.com
+  - DOMAIN-SUFFIX,hcaptcha.com
+  - DOMAIN-SUFFIX,recaptcha.net
 
 # WebRTC STUN (защита от утечки реального IP при просмотре медиа)
-- DOMAIN,stun.cloudflare.com
-- DOMAIN,stun.services.mozilla.com
+  - DOMAIN,stun.cloudflare.com
+  - DOMAIN,stun.services.mozilla.com
 
 # ==============================================================================
 # 1. СТРИМИНГИ, ОНЛАЙН-КИНОТЕАТРЫ И АНИМЕ (NETFLIX / HDREZKA / KINOPUB / FILMIX)
 # ==============================================================================
 # Netflix (полный стек: веб, аппы, CDN видеопотоков и замер скорости Fast.com)
-- DOMAIN-SUFFIX,netflix.com
-- DOMAIN-SUFFIX,netflix.net
-- DOMAIN-SUFFIX,nflximg.net
-- DOMAIN-SUFFIX,nflximg.com
-- DOMAIN-SUFFIX,nflxvideo.net
-- DOMAIN-SUFFIX,nflxext.com
-- DOMAIN-SUFFIX,nflxso.net
-- DOMAIN-SUFFIX,netflixinvestor.com
-- DOMAIN-SUFFIX,netflixtechblog.com
-- DOMAIN-SUFFIX,fast.com
+  - DOMAIN-SUFFIX,netflix.com
+  - DOMAIN-SUFFIX,netflix.net
+  - DOMAIN-SUFFIX,nflximg.net
+  - DOMAIN-SUFFIX,nflximg.com
+  - DOMAIN-SUFFIX,nflxvideo.net
+  - DOMAIN-SUFFIX,nflxext.com
+  - DOMAIN-SUFFIX,nflxso.net
+  - DOMAIN-SUFFIX,netflixinvestor.com
+  - DOMAIN-SUFFIX,netflixtechblog.com
+  - DOMAIN-SUFFIX,fast.com
 
 # Crunchyroll (аниме-стриминг и плеер)
-- DOMAIN-SUFFIX,crunchyroll.com
-- DOMAIN-SUFFIX,vrv.co
+  - DOMAIN-SUFFIX,crunchyroll.com
+  - DOMAIN-SUFFIX,vrv.co
 
 # HDRezka / Rezka (все официальные зеркала и стрим-серверы)
-- DOMAIN-SUFFIX,hdrezka.ag
-- DOMAIN-SUFFIX,hdrezka.me
-- DOMAIN-SUFFIX,rezka.ag
-- DOMAIN-SUFFIX,rezkify.com
-- DOMAIN-SUFFIX,streamguard.cc
-- DOMAIN-SUFFIX,voidboost.net
+  - DOMAIN-SUFFIX,hdrezka.ag
+  - DOMAIN-SUFFIX,hdrezka.me
+  - DOMAIN-SUFFIX,rezka.ag
+  - DOMAIN-SUFFIX,rezkify.com
+  - DOMAIN-SUFFIX,streamguard.cc
+  - DOMAIN-SUFFIX,voidboost.net
 
 # Kinopub (сервис, API и плееры)
-- DOMAIN-SUFFIX,kino.pub
-- DOMAIN-SUFFIX,kinopub.me
+  - DOMAIN-SUFFIX,kino.pub
+  - DOMAIN-SUFFIX,kinopub.me
 
 # Filmix, LostFilm & Lordfilm
-- DOMAIN-SUFFIX,filmix.biz
-- DOMAIN-SUFFIX,filmix.ac
-- DOMAIN-SUFFIX,filmix.me
-- DOMAIN-SUFFIX,lostfilm.tv
-- DOMAIN-SUFFIX,lostfilm.info
-- DOMAIN-SUFFIX,lostfilm.today
-- DOMAIN-SUFFIX,lordfilm.fun
-- DOMAIN-SUFFIX,lordfilm.cx
+  - DOMAIN-SUFFIX,filmix.biz
+  - DOMAIN-SUFFIX,filmix.ac
+  - DOMAIN-SUFFIX,filmix.me
+  - DOMAIN-SUFFIX,lostfilm.tv
+  - DOMAIN-SUFFIX,lostfilm.info
+  - DOMAIN-SUFFIX,lostfilm.today
+  - DOMAIN-SUFFIX,lordfilm.fun
+  - DOMAIN-SUFFIX,lordfilm.cx
 
 # Популярные аниме-порталы и плееры
-- DOMAIN-SUFFIX,animego.org
-- DOMAIN-SUFFIX,animego.me
-- DOMAIN-SUFFIX,shikimori.one
-- DOMAIN-SUFFIX,shikimori.me
-- DOMAIN-SUFFIX,jut.su
-- DOMAIN-SUFFIX,anilibria.tv
-- DOMAIN-SUFFIX,anilibria.top
-- DOMAIN-SUFFIX,sovetromantica.com
+  - DOMAIN-SUFFIX,animego.org
+  - DOMAIN-SUFFIX,animego.me
+  - DOMAIN-SUFFIX,shikimori.one
+  - DOMAIN-SUFFIX,shikimori.me
+  - DOMAIN-SUFFIX,jut.su
+  - DOMAIN-SUFFIX,anilibria.tv
+  - DOMAIN-SUFFIX,anilibria.top
+  - DOMAIN-SUFFIX,sovetromantica.com
 
 # ==============================================================================
 # 2. TIKTOK & BYTEDANCE & CAPCUT (ПОЛНЫЙ НАБОР С ЭФФЕКТАМИ И CDN)
 # ==============================================================================
-- DOMAIN-SUFFIX,tiktok.com
-- DOMAIN-SUFFIX,tiktokcdn.com
-- DOMAIN-SUFFIX,tiktokcdn-eu.com
-- DOMAIN-SUFFIX,tiktokcdn-us.com
-- DOMAIN-SUFFIX,tiktokv.com
-- DOMAIN-SUFFIX,tiktokv.eu
-- DOMAIN-SUFFIX,tiktokw.eu
-- DOMAIN-SUFFIX,tiktokd.org
-- DOMAIN-SUFFIX,tiktokglobalshop.com
-- DOMAIN-SUFFIX,byteoversea.com
-- DOMAIN-SUFFIX,byteoversea.net
-- DOMAIN-SUFFIX,bytedance.com
-- DOMAIN-SUFFIX,bytedtos.com
-- DOMAIN-SUFFIX,ibytedtos.com
-- DOMAIN-SUFFIX,ibyteimg.com
-- DOMAIN-SUFFIX,byteimg.com
-- DOMAIN-SUFFIX,bytetcdn.com
-- DOMAIN-SUFFIX,ipstatp.com
-- DOMAIN-SUFFIX,isnssdk.com
-- DOMAIN-SUFFIX,pstatp.com
-- DOMAIN-SUFFIX,muscdn.com
-- DOMAIN-SUFFIX,musical.ly
-- DOMAIN-SUFFIX,tlivecdn.com
-- DOMAIN-SUFFIX,ttlivecdn.com
-- DOMAIN-SUFFIX,ttoversea.net
-- DOMAIN-SUFFIX,ttwstatic.com
-- DOMAIN-SUFFIX,capcut.com
-- DOMAIN-SUFFIX,capcutapi.com
-- DOMAIN-SUFFIX,capcutcdn.com
-- DOMAIN-SUFFIX,capcutstatic.com
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktokcdn-eu.com
+  - DOMAIN-SUFFIX,tiktokcdn-us.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,tiktokv.eu
+  - DOMAIN-SUFFIX,tiktokw.eu
+  - DOMAIN-SUFFIX,tiktokd.org
+  - DOMAIN-SUFFIX,tiktokglobalshop.com
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,byteoversea.net
+  - DOMAIN-SUFFIX,bytedance.com
+  - DOMAIN-SUFFIX,bytedtos.com
+  - DOMAIN-SUFFIX,ibytedtos.com
+  - DOMAIN-SUFFIX,ibyteimg.com
+  - DOMAIN-SUFFIX,byteimg.com
+  - DOMAIN-SUFFIX,bytetcdn.com
+  - DOMAIN-SUFFIX,ipstatp.com
+  - DOMAIN-SUFFIX,isnssdk.com
+  - DOMAIN-SUFFIX,pstatp.com
+  - DOMAIN-SUFFIX,muscdn.com
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-SUFFIX,tlivecdn.com
+  - DOMAIN-SUFFIX,ttlivecdn.com
+  - DOMAIN-SUFFIX,ttoversea.net
+  - DOMAIN-SUFFIX,ttwstatic.com
+  - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-SUFFIX,capcutapi.com
+  - DOMAIN-SUFFIX,capcutcdn.com
+  - DOMAIN-SUFFIX,capcutstatic.com
 
 # ==============================================================================
 # 3. MICROSOFT (ПОЛНЫЙ НАБОР: WINDOWS UPDATE, АКТИВАЦИЯ, 365, TEAMS, AZURE)
 # ==============================================================================
-- DOMAIN-SUFFIX,microsoft.com
-- DOMAIN-SUFFIX,microsoftonline.com
-- DOMAIN-SUFFIX,microsoftstore.com
-- DOMAIN-SUFFIX,live.com
-- DOMAIN-SUFFIX,office.com
-- DOMAIN-SUFFIX,office365.com
-- DOMAIN-SUFFIX,onenote.com
-- DOMAIN-SUFFIX,sharepoint.com
-- DOMAIN-SUFFIX,skype.com
-- DOMAIN-SUFFIX,teams.microsoft.com
-- DOMAIN-SUFFIX,azure.com
-- DOMAIN-SUFFIX,azureedge.net
-- DOMAIN-SUFFIX,windows.com
-- DOMAIN-SUFFIX,windowsupdate.com
-- DOMAIN-SUFFIX,sfx.ms
-- DOMAIN-SUFFIX,msecnd.net
-- DOMAIN-SUFFIX,msocdn.com
-- DOMAIN-SUFFIX,visualstudio.com
-- DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,microsoftstore.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office365.com
+  - DOMAIN-SUFFIX,onenote.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,teams.microsoft.com
+  - DOMAIN-SUFFIX,azure.com
+  - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,sfx.ms
+  - DOMAIN-SUFFIX,msecnd.net
+  - DOMAIN-SUFFIX,msocdn.com
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,windows.net
 
 # ==============================================================================
 # 4. ADOBE (CREATIVE CLOUD, PHOTOSHOP, ILLUSTRATOR, АКТИВАЦИЯ И CDN)
 # ==============================================================================
-- DOMAIN-SUFFIX,adobe.com
-- DOMAIN-SUFFIX,adobe.io
-- DOMAIN-SUFFIX,adobelogin.com
-- DOMAIN-SUFFIX,adobeidentity.com
-- DOMAIN-SUFFIX,adobesc.com
-- DOMAIN-SUFFIX,adobeaemcloud.com
-- DOMAIN-SUFFIX,typekit.net
-- DOMAIN-SUFFIX,behance.net
-- DOMAIN-SUFFIX,adobestock.com
+  - DOMAIN-SUFFIX,adobe.com
+  - DOMAIN-SUFFIX,adobe.io
+  - DOMAIN-SUFFIX,adobelogin.com
+  - DOMAIN-SUFFIX,adobeidentity.com
+  - DOMAIN-SUFFIX,adobesc.com
+  - DOMAIN-SUFFIX,adobeaemcloud.com
+  - DOMAIN-SUFFIX,typekit.net
+  - DOMAIN-SUFFIX,behance.net
+  - DOMAIN-SUFFIX,adobestock.com
 
 # ==============================================================================
 # 5. AUTODESK (AUTOCAD, 3DS MAX, MAYA, ЛИЦЕНЗИИ И ОБЛАКО)
 # ==============================================================================
-- DOMAIN-SUFFIX,autodesk.com
-- DOMAIN-SUFFIX,autodesk360.com
-- DOMAIN-SUFFIX,autocad.com
-- DOMAIN-SUFFIX,tinkercad.com
+  - DOMAIN-SUFFIX,autodesk.com
+  - DOMAIN-SUFFIX,autodesk360.com
+  - DOMAIN-SUFFIX,autocad.com
+  - DOMAIN-SUFFIX,tinkercad.com
 
 # ==============================================================================
 # 6. РАЗРАБОТКА, IDE И ВЕНДОРЫ СОФТА (JETBRAINS, DOCKER, ORACLE, ATLASSIAN)
 # ==============================================================================
 # JetBrains (PyCharm, WebStorm, IDEA, CLion, Rider, DataGrip, плагины)
-- DOMAIN-SUFFIX,jetbrains.com
-- DOMAIN-SUFFIX,jetbrains.org
-- DOMAIN-SUFFIX,jetbrains.net
-- DOMAIN-SUFFIX,datalore.io
-- DOMAIN-SUFFIX,kotlinlang.org
-- DOMAIN-SUFFIX,intellij.net
+  - DOMAIN-SUFFIX,jetbrains.com
+  - DOMAIN-SUFFIX,jetbrains.org
+  - DOMAIN-SUFFIX,jetbrains.net
+  - DOMAIN-SUFFIX,datalore.io
+  - DOMAIN-SUFFIX,kotlinlang.org
+  - DOMAIN-SUFFIX,intellij.net
 
 # Docker & Реестры контейнеров
-- DOMAIN-SUFFIX,docker.com
-- DOMAIN-SUFFIX,docker.io
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,docker.io
 
 # Oracle, Java & VirtualBox
-- DOMAIN-SUFFIX,oracle.com
-- DOMAIN-SUFFIX,java.com
-- DOMAIN-SUFFIX,virtualbox.org
+  - DOMAIN-SUFFIX,oracle.com
+  - DOMAIN-SUFFIX,java.com
+  - DOMAIN-SUFFIX,virtualbox.org
 
 # Atlassian (Jira, Confluence, Trello, Bitbucket)
-- DOMAIN-SUFFIX,atlassian.com
-- DOMAIN-SUFFIX,atlassian.net
-- DOMAIN-SUFFIX,trello.com
-- DOMAIN-SUFFIX,bitbucket.org
+  - DOMAIN-SUFFIX,atlassian.com
+  - DOMAIN-SUFFIX,atlassian.net
+  - DOMAIN-SUFFIX,trello.com
+  - DOMAIN-SUFFIX,bitbucket.org
 
 # Git-хостинги и платформы разработки
-- DOMAIN-SUFFIX,gitlab.com
-- DOMAIN-SUFFIX,sourceforge.net
-- DOMAIN-SUFFIX,pypi.org
-- DOMAIN-SUFFIX,pythonhosted.org
+  - DOMAIN-SUFFIX,gitlab.com
+  - DOMAIN-SUFFIX,sourceforge.net
+  - DOMAIN-SUFFIX,pypi.org
+  - DOMAIN-SUFFIX,pythonhosted.org
 
 # ==============================================================================
 # 7. ИНСТРУМЕНТЫ ПРОДУКТИВНОСТИ И СВЯЗЬ (NOTION, FIGMA, MIRO, SLACK, ZOOM, PROTON)
 # ==============================================================================
 # Notion
-- DOMAIN-SUFFIX,notion.so
-- DOMAIN-SUFFIX,notion.site
-- DOMAIN-SUFFIX,notion.com
-- DOMAIN-SUFFIX,notion-static.com
-- DOMAIN-SUFFIX,notion.ai
-- DOMAIN-SUFFIX,notionusercontent.com
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,notion.site
+  - DOMAIN-SUFFIX,notion.com
+  - DOMAIN-SUFFIX,notion-static.com
+  - DOMAIN-SUFFIX,notion.ai
+  - DOMAIN-SUFFIX,notionusercontent.com
 
 # Figma & Miro
-- DOMAIN-SUFFIX,figma.com
-- DOMAIN-SUFFIX,figmasandbox.com
-- DOMAIN-SUFFIX,miro.com
-- DOMAIN-SUFFIX,mirostatic.com
+  - DOMAIN-SUFFIX,figma.com
+  - DOMAIN-SUFFIX,figmasandbox.com
+  - DOMAIN-SUFFIX,miro.com
+  - DOMAIN-SUFFIX,mirostatic.com
 
 # Slack, Zoom & Canva
-- DOMAIN-SUFFIX,slack.com
-- DOMAIN-SUFFIX,slack-edge.com
-- DOMAIN-SUFFIX,zoom.us
-- DOMAIN-SUFFIX,zoomgov.com
-- DOMAIN-SUFFIX,canva.com
+  - DOMAIN-SUFFIX,slack.com
+  - DOMAIN-SUFFIX,slack-edge.com
+  - DOMAIN-SUFFIX,zoom.us
+  - DOMAIN-SUFFIX,zoomgov.com
+  - DOMAIN-SUFFIX,canva.com
 
 # Proton & Безопасная почта
-- DOMAIN-SUFFIX,proton.me
-- DOMAIN-SUFFIX,protonmail.com
-- DOMAIN-SUFFIX,tuta.com
-- DOMAIN-SUFFIX,tutanota.com
+  - DOMAIN-SUFFIX,proton.me
+  - DOMAIN-SUFFIX,protonmail.com
+  - DOMAIN-SUFFIX,tuta.com
+  - DOMAIN-SUFFIX,tutanota.com
 
 # Облачные хранилища
-- DOMAIN-SUFFIX,dropbox.com
-- DOMAIN-SUFFIX,dropboxstatic.com
-- DOMAIN-SUFFIX,box.com
+  - DOMAIN-SUFFIX,dropbox.com
+  - DOMAIN-SUFFIX,dropboxstatic.com
+  - DOMAIN-SUFFIX,box.com
 
 # ==============================================================================
 # 8. ЗАРУБЕЖНЫЕ СОЦСЕТИ, СООБЩЕСТВА И ЗНАКОМСТВА (REDDIT / PINTEREST / TINDER)
 # ==============================================================================
 # Reddit (полный набор с CDN картинок и медиасерверами)
-- DOMAIN-SUFFIX,reddit.com
-- DOMAIN-SUFFIX,redditmedia.com
-- DOMAIN-SUFFIX,redditstatic.com
-- DOMAIN-SUFFIX,redd.it
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,redditmedia.com
+  - DOMAIN-SUFFIX,redditstatic.com
+  - DOMAIN-SUFFIX,redd.it
 
 # Pinterest & Tumblr
-- DOMAIN-SUFFIX,pinterest.com
-- DOMAIN-SUFFIX,pinimg.com
-- DOMAIN-SUFFIX,tumblr.com
+  - DOMAIN-SUFFIX,pinterest.com
+  - DOMAIN-SUFFIX,pinimg.com
+  - DOMAIN-SUFFIX,tumblr.com
 
 # Альтернативные соцсети и форумы
-- DOMAIN-SUFFIX,bsky.app
-- DOMAIN-SUFFIX,bsky.social
-- DOMAIN-SUFFIX,4chan.org
-- DOMAIN-SUFFIX,4cdn.org
-- DOMAIN-SUFFIX,2ch.hk
-- DOMAIN-SUFFIX,snapchat.com
-- DOMAIN-SUFFIX,snap.com
-- DOMAIN-SUFFIX,sc-static.net
-- DOMAIN-SUFFIX,sc-cdn.net
-- DOMAIN-SUFFIX,4pda.to
-- DOMAIN-SUFFIX,ru-board.com
+  - DOMAIN-SUFFIX,bsky.app
+  - DOMAIN-SUFFIX,bsky.social
+  - DOMAIN-SUFFIX,4chan.org
+  - DOMAIN-SUFFIX,4cdn.org
+  - DOMAIN-SUFFIX,2ch.hk
+  - DOMAIN-SUFFIX,snapchat.com
+  - DOMAIN-SUFFIX,snap.com
+  - DOMAIN-SUFFIX,sc-static.net
+  - DOMAIN-SUFFIX,sc-cdn.net
+  - DOMAIN-SUFFIX,4pda.to
+  - DOMAIN-SUFFIX,ru-board.com
 
 # Дейтинг-сервисы
-- DOMAIN-SUFFIX,tinder.com
-- DOMAIN-SUFFIX,gotinder.com
-- DOMAIN-SUFFIX,badoo.com
-- DOMAIN-SUFFIX,bumble.com
-- DOMAIN-SUFFIX,pure.app
-- DOMAIN-SUFFIX,hornet.com
-- DOMAIN-SUFFIX,meetme.com
+  - DOMAIN-SUFFIX,tinder.com
+  - DOMAIN-SUFFIX,gotinder.com
+  - DOMAIN-SUFFIX,badoo.com
+  - DOMAIN-SUFFIX,bumble.com
+  - DOMAIN-SUFFIX,pure.app
+  - DOMAIN-SUFFIX,hornet.com
+  - DOMAIN-SUFFIX,meetme.com
 
 # Авторские платформы и блоги
-- DOMAIN-SUFFIX,patreon.com
-- DOMAIN-SUFFIX,patreonusercontent.com
-- DOMAIN-SUFFIX,medium.com
-- DOMAIN-SUFFIX,quora.com
-- DOMAIN-SUFFIX,quoracdn.net
-- DOMAIN-SUFFIX,linktr.ee
-- DOMAIN-SUFFIX,cwer.ws
-- DOMAIN-SUFFIX,fmhy.net
-- DOMAIN-SUFFIX,fmhy.lol
-- DOMAIN-SUFFIX,strava.com
-- DOMAIN-SUFFIX,garmin.com
-- DOMAIN-SUFFIX,wikidot.com
-- DOMAIN-SUFFIX,fastpic.org
-- DOMAIN-SUFFIX,fastpic.ru
-- DOMAIN-SUFFIX,backblazeb2.com
+  - DOMAIN-SUFFIX,patreon.com
+  - DOMAIN-SUFFIX,patreonusercontent.com
+  - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,quora.com
+  - DOMAIN-SUFFIX,quoracdn.net
+  - DOMAIN-SUFFIX,linktr.ee
+  - DOMAIN-SUFFIX,cwer.ws
+  - DOMAIN-SUFFIX,fmhy.net
+  - DOMAIN-SUFFIX,fmhy.lol
+  - DOMAIN-SUFFIX,strava.com
+  - DOMAIN-SUFFIX,garmin.com
+  - DOMAIN-SUFFIX,wikidot.com
+  - DOMAIN-SUFFIX,fastpic.org
+  - DOMAIN-SUFFIX,fastpic.ru
+  - DOMAIN-SUFFIX,backblazeb2.com
 
 # ==============================================================================
 # 9. ЖЕЛЕЗО, ДРАЙВЕРЫ И ПРОИЗВОДИТЕЛИ ПК (INTEL, AMD, NVIDIA, ASUS, HP, DELL)
 # ==============================================================================
 # Intel (все международные домены, драйверы и бренд-ресурсы)
-- DOMAIN-SUFFIX,intel.com
-- DOMAIN-SUFFIX,intel.ru
-- DOMAIN-SUFFIX,intel.co.uk
-- DOMAIN-SUFFIX,intel.de
-- DOMAIN-SUFFIX,intel.fr
-- DOMAIN-SUFFIX,intel.ca
-- DOMAIN-SUFFIX,intel.in
-- DOMAIN-SUFFIX,intel.la
-- DOMAIN-SUFFIX,intelcdn.com
-- DOMAIN-SUFFIX,01.org
-- DOMAIN-SUFFIX,altera.com
-- DOMAIN-SUFFIX,acpica.com
-- DOMAIN-SUFFIX,oneapi.io
-- DOMAIN-SUFFIX,oneapi.com
-- DOMAIN-SUFFIX,openvino.ai
-- DOMAIN-SUFFIX,openvinotoolkit.org
-- DOMAIN-SUFFIX,clearlinux.org
-- DOMAIN-SUFFIX,xeon.com
-- DOMAIN-SUFFIX,pentium.com
-- DOMAIN-SUFFIX,thunderbolttechnology.net
-- DOMAIN-KEYWORD,intel
+  - DOMAIN-SUFFIX,intel.com
+  - DOMAIN-SUFFIX,intel.ru
+  - DOMAIN-SUFFIX,intel.co.uk
+  - DOMAIN-SUFFIX,intel.de
+  - DOMAIN-SUFFIX,intel.fr
+  - DOMAIN-SUFFIX,intel.ca
+  - DOMAIN-SUFFIX,intel.in
+  - DOMAIN-SUFFIX,intel.la
+  - DOMAIN-SUFFIX,intelcdn.com
+  - DOMAIN-SUFFIX,01.org
+  - DOMAIN-SUFFIX,altera.com
+  - DOMAIN-SUFFIX,acpica.com
+  - DOMAIN-SUFFIX,oneapi.io
+  - DOMAIN-SUFFIX,oneapi.com
+  - DOMAIN-SUFFIX,openvino.ai
+  - DOMAIN-SUFFIX,openvinotoolkit.org
+  - DOMAIN-SUFFIX,clearlinux.org
+  - DOMAIN-SUFFIX,xeon.com
+  - DOMAIN-SUFFIX,pentium.com
+  - DOMAIN-SUFFIX,thunderbolttechnology.net
+  - DOMAIN-KEYWORD,intel
 
 # AMD & NVIDIA (драйверы Adrenalin, GeForce Experience, Studio)
-- DOMAIN-SUFFIX,amd.com
-- DOMAIN-SUFFIX,amd.com.cn
-- DOMAIN-SUFFIX,nvidia.com
-- DOMAIN-SUFFIX,geforce.com
-- DOMAIN-SUFFIX,nvidiagrid.net
+  - DOMAIN-SUFFIX,amd.com
+  - DOMAIN-SUFFIX,amd.com.cn
+  - DOMAIN-SUFFIX,nvidia.com
+  - DOMAIN-SUFFIX,geforce.com
+  - DOMAIN-SUFFIX,nvidiagrid.net
 
 # ПК, ноутбуки и материнские платы (MSI, Acer, Lenovo, Gigabyte, ASRock)
-- DOMAIN-SUFFIX,msi.com
-- DOMAIN-SUFFIX,msi.com.tw
-- DOMAIN-SUFFIX,msi.cn
-- DOMAIN-SUFFIX,acer.com
-- DOMAIN-SUFFIX,predatorgaming.com
-- DOMAIN-SUFFIX,acer-group.com
-- DOMAIN-SUFFIX,lenovo.com
-- DOMAIN-SUFFIX,lenovomm.com
-- DOMAIN-SUFFIX,lenovo.com.cn
-- DOMAIN-SUFFIX,thinkpad.com
-- DOMAIN-SUFFIX,gigabyte.com
-- DOMAIN-SUFFIX,aorus.com
-- DOMAIN-SUFFIX,asrock.com
-- DOMAIN-SUFFIX,asrock.com.tw
+  - DOMAIN-SUFFIX,msi.com
+  - DOMAIN-SUFFIX,msi.com.tw
+  - DOMAIN-SUFFIX,msi.cn
+  - DOMAIN-SUFFIX,acer.com
+  - DOMAIN-SUFFIX,predatorgaming.com
+  - DOMAIN-SUFFIX,acer-group.com
+  - DOMAIN-SUFFIX,lenovo.com
+  - DOMAIN-SUFFIX,lenovomm.com
+  - DOMAIN-SUFFIX,lenovo.com.cn
+  - DOMAIN-SUFFIX,thinkpad.com
+  - DOMAIN-SUFFIX,gigabyte.com
+  - DOMAIN-SUFFIX,aorus.com
+  - DOMAIN-SUFFIX,asrock.com
+  - DOMAIN-SUFFIX,asrock.com.tw
 
 # Видеокарты (Palit, Gainward, Zotac, Inno3D, KFA2, Sapphire, PowerColor, XFX, EVGA)
-- DOMAIN-SUFFIX,palit.com
-- DOMAIN-SUFFIX,palit.biz
-- DOMAIN-SUFFIX,gainward.com
-- DOMAIN-SUFFIX,zotac.com
-- DOMAIN-SUFFIX,inno3d.com
-- DOMAIN-SUFFIX,kfa2.com
-- DOMAIN-SUFFIX,galax.com
-- DOMAIN-SUFFIX,sapphiretech.com
-- DOMAIN-SUFFIX,powercolor.com
-- DOMAIN-SUFFIX,xfxforce.com
-- DOMAIN-SUFFIX,evga.com
+  - DOMAIN-SUFFIX,palit.com
+  - DOMAIN-SUFFIX,palit.biz
+  - DOMAIN-SUFFIX,gainward.com
+  - DOMAIN-SUFFIX,zotac.com
+  - DOMAIN-SUFFIX,inno3d.com
+  - DOMAIN-SUFFIX,kfa2.com
+  - DOMAIN-SUFFIX,galax.com
+  - DOMAIN-SUFFIX,sapphiretech.com
+  - DOMAIN-SUFFIX,powercolor.com
+  - DOMAIN-SUFFIX,xfxforce.com
+  - DOMAIN-SUFFIX,evga.com
 
 # Память и SSD (Samsung, Kingston, Crucial, ADATA, TeamGroup, Kioxia, Transcend, Netac)
-- DOMAIN-SUFFIX,samsung.com
-- DOMAIN-SUFFIX,samsungsemiconductor.com
-- DOMAIN-SUFFIX,kingston.com
-- DOMAIN-SUFFIX,hyperx.com
-- DOMAIN-SUFFIX,hyperxgaming.com
-- DOMAIN-SUFFIX,crucial.com
-- DOMAIN-SUFFIX,micron.com
-- DOMAIN-SUFFIX,adata.com
-- DOMAIN-SUFFIX,xpg.com
-- DOMAIN-SUFFIX,teamgroupinc.com
-- DOMAIN-SUFFIX,kioxia.com
-- DOMAIN-SUFFIX,transcend-info.com
-- DOMAIN-SUFFIX,netac.com
+  - DOMAIN-SUFFIX,samsung.com
+  - DOMAIN-SUFFIX,samsungsemiconductor.com
+  - DOMAIN-SUFFIX,kingston.com
+  - DOMAIN-SUFFIX,hyperx.com
+  - DOMAIN-SUFFIX,hyperxgaming.com
+  - DOMAIN-SUFFIX,crucial.com
+  - DOMAIN-SUFFIX,micron.com
+  - DOMAIN-SUFFIX,adata.com
+  - DOMAIN-SUFFIX,xpg.com
+  - DOMAIN-SUFFIX,teamgroupinc.com
+  - DOMAIN-SUFFIX,kioxia.com
+  - DOMAIN-SUFFIX,transcend-info.com
+  - DOMAIN-SUFFIX,netac.com
 
 # Принтеры и сканеры (Canon, Epson, Brother, Xerox)
-- DOMAIN-SUFFIX,canon.com
-- DOMAIN-SUFFIX,canon-europe.com
-- DOMAIN-SUFFIX,epson.com
-- DOMAIN-SUFFIX,epson.eu
-- DOMAIN-SUFFIX,brother.com
-- DOMAIN-SUFFIX,brother.eu
-- DOMAIN-SUFFIX,xerox.com
+  - DOMAIN-SUFFIX,canon.com
+  - DOMAIN-SUFFIX,canon-europe.com
+  - DOMAIN-SUFFIX,epson.com
+  - DOMAIN-SUFFIX,epson.eu
+  - DOMAIN-SUFFIX,brother.com
+  - DOMAIN-SUFFIX,brother.eu
+  - DOMAIN-SUFFIX,xerox.com
 
 # Сетевое оборудование (TP-Link, MikroTik, Netgear)
-- DOMAIN-SUFFIX,tp-link.com
-- DOMAIN-SUFFIX,tplinkwifi.net
-- DOMAIN-SUFFIX,mikrotik.com
-- DOMAIN-SUFFIX,netgear.com
+  - DOMAIN-SUFFIX,tp-link.com
+  - DOMAIN-SUFFIX,tplinkwifi.net
+  - DOMAIN-SUFFIX,mikrotik.com
+  - DOMAIN-SUFFIX,netgear.com
 
 # Ноутбуки и мониторы (Huawei, Honor, Xiaomi)
-- DOMAIN-SUFFIX,huawei.com
-- DOMAIN-SUFFIX,honor.com
-- DOMAIN-SUFFIX,mi.com
-- DOMAIN-SUFFIX,xiaomi.com
+  - DOMAIN-SUFFIX,huawei.com
+  - DOMAIN-SUFFIX,honor.com
+  - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,xiaomi.com
 
 # Геймерская периферия, звук и стриминг (Razer, Corsair, Elgato, SteelSeries, Focusrite, Logitech)
-- DOMAIN-SUFFIX,razer.com
-- DOMAIN-SUFFIX,razerzone.com
-- DOMAIN-SUFFIX,razerapi.com
-- DOMAIN-SUFFIX,corsair.com
-- DOMAIN-SUFFIX,elgato.com
-- DOMAIN-SUFFIX,scufgaming.com
-- DOMAIN-SUFFIX,steelseries.com
-- DOMAIN-SUFFIX,steelseriescdn.com
-- DOMAIN-SUFFIX,creative.com
-- DOMAIN-SUFFIX,soundblaster.com
-- DOMAIN-SUFFIX,focusrite.com
-- DOMAIN-SUFFIX,keychron.com
-- DOMAIN-SUFFIX,gloriousgaming.com
-- DOMAIN-SUFFIX,logitech.com
-- DOMAIN-SUFFIX,logi.com
-- DOMAIN-SUFFIX,logitechg.com
+  - DOMAIN-SUFFIX,razer.com
+  - DOMAIN-SUFFIX,razerzone.com
+  - DOMAIN-SUFFIX,razerapi.com
+  - DOMAIN-SUFFIX,corsair.com
+  - DOMAIN-SUFFIX,elgato.com
+  - DOMAIN-SUFFIX,scufgaming.com
+  - DOMAIN-SUFFIX,steelseries.com
+  - DOMAIN-SUFFIX,steelseriescdn.com
+  - DOMAIN-SUFFIX,creative.com
+  - DOMAIN-SUFFIX,soundblaster.com
+  - DOMAIN-SUFFIX,focusrite.com
+  - DOMAIN-SUFFIX,keychron.com
+  - DOMAIN-SUFFIX,gloriousgaming.com
+  - DOMAIN-SUFFIX,logitech.com
+  - DOMAIN-SUFFIX,logi.com
+  - DOMAIN-SUFFIX,logitechg.com
 
 # Мониторы, охлаждение, корпуса и БП (BenQ, ViewSonic, AOC, NZXT, be quiet!, Noctua, Seasonic, Fractal)
-- DOMAIN-SUFFIX,benq.com
-- DOMAIN-SUFFIX,viewsonic.com
-- DOMAIN-SUFFIX,aoc.com
-- DOMAIN-SUFFIX,agonbyaoc.com
-- DOMAIN-SUFFIX,nzxt.com
-- DOMAIN-SUFFIX,coolermaster.com
-- DOMAIN-SUFFIX,bequiet.com
-- DOMAIN-SUFFIX,deepcool.com
-- DOMAIN-SUFFIX,noctua.at
-- DOMAIN-SUFFIX,lian-li.com
-- DOMAIN-SUFFIX,thermaltake.com
-- DOMAIN-SUFFIX,seasonic.com
-- DOMAIN-SUFFIX,fractal-design.com
-- DOMAIN-SUFFIX,cougargaming.com
-- DOMAIN-SUFFIX,thermalright.com
-- DOMAIN-SUFFIX,idcooling.com
-- DOMAIN-SUFFIX,montechpc.com
-- DOMAIN-SUFFIX,realtek.com
-- DOMAIN-SUFFIX,realtek.com.tw
+  - DOMAIN-SUFFIX,benq.com
+  - DOMAIN-SUFFIX,viewsonic.com
+  - DOMAIN-SUFFIX,aoc.com
+  - DOMAIN-SUFFIX,agonbyaoc.com
+  - DOMAIN-SUFFIX,nzxt.com
+  - DOMAIN-SUFFIX,coolermaster.com
+  - DOMAIN-SUFFIX,bequiet.com
+  - DOMAIN-SUFFIX,deepcool.com
+  - DOMAIN-SUFFIX,noctua.at
+  - DOMAIN-SUFFIX,lian-li.com
+  - DOMAIN-SUFFIX,thermaltake.com
+  - DOMAIN-SUFFIX,seasonic.com
+  - DOMAIN-SUFFIX,fractal-design.com
+  - DOMAIN-SUFFIX,cougargaming.com
+  - DOMAIN-SUFFIX,thermalright.com
+  - DOMAIN-SUFFIX,idcooling.com
+  - DOMAIN-SUFFIX,montechpc.com
+  - DOMAIN-SUFFIX,realtek.com
+  - DOMAIN-SUFFIX,realtek.com.tw
 
 # HP, Dell, ASUS, Western Digital, Wacom
-- DOMAIN-SUFFIX,hp.com
-- DOMAIN-SUFFIX,hpe.com
-- DOMAIN-SUFFIX,dell.com
-- DOMAIN-SUFFIX,alienware.com
-- DOMAIN-SUFFIX,delltechnologies.com
-- DOMAIN-SUFFIX,asus.com
-- DOMAIN-SUFFIX,asuscomm.com
-- DOMAIN-SUFFIX,westerndigital.com
-- DOMAIN-SUFFIX,sandisk.com
-- DOMAIN-SUFFIX,wd.com
-- DOMAIN-SUFFIX,wdc.com
-- DOMAIN-SUFFIX,seagate.com
-- DOMAIN-SUFFIX,wacom.com
-- DOMAIN-SUFFIX,wacom.eu
-- DOMAIN-KEYWORD,wacom
+  - DOMAIN-SUFFIX,hp.com
+  - DOMAIN-SUFFIX,hpe.com
+  - DOMAIN-SUFFIX,dell.com
+  - DOMAIN-SUFFIX,alienware.com
+  - DOMAIN-SUFFIX,delltechnologies.com
+  - DOMAIN-SUFFIX,asus.com
+  - DOMAIN-SUFFIX,asuscomm.com
+  - DOMAIN-SUFFIX,westerndigital.com
+  - DOMAIN-SUFFIX,sandisk.com
+  - DOMAIN-SUFFIX,wd.com
+  - DOMAIN-SUFFIX,wdc.com
+  - DOMAIN-SUFFIX,seagate.com
+  - DOMAIN-SUFFIX,wacom.com
+  - DOMAIN-SUFFIX,wacom.eu
+  - DOMAIN-KEYWORD,wacom
 
 # Sony & PlayStation (все сайты, сервисы, PSN и PS Store)
-- DOMAIN-SUFFIX,sony.com
-- DOMAIN-SUFFIX,sony.net
-- DOMAIN-SUFFIX,sony-europe.com
-- DOMAIN-SUFFIX,sony-asia.com
-- DOMAIN-KEYWORD,sony
-- DOMAIN-SUFFIX,playstation.com
-- DOMAIN-SUFFIX,playstation.net
-- DOMAIN-SUFFIX,playstationnetwork.com
-- DOMAIN-KEYWORD,playstation
+  - DOMAIN-SUFFIX,sony.com
+  - DOMAIN-SUFFIX,sony.net
+  - DOMAIN-SUFFIX,sony-europe.com
+  - DOMAIN-SUFFIX,sony-asia.com
+  - DOMAIN-KEYWORD,sony
+  - DOMAIN-SUFFIX,playstation.com
+  - DOMAIN-SUFFIX,playstation.net
+  - DOMAIN-SUFFIX,playstationnetwork.com
+  - DOMAIN-KEYWORD,playstation
 
 # LG Electronics (Smart TV, веб-сервисы и магазины приложений)
-- DOMAIN-SUFFIX,lg.com
-- DOMAIN-SUFFIX,lge.com
-- DOMAIN-SUFFIX,lgtvcommon.com
-- DOMAIN-SUFFIX,lgthinq.com
-- DOMAIN-SUFFIX,lgappstv.com
-- DOMAIN-SUFFIX,lgsmartad.com
-- DOMAIN-SUFFIX,dacom.co.kr
-- DOMAIN-SUFFIX,kidc.net
-- DOMAIN-SUFFIX,uplus.co.kr
-- DOMAIN-KEYWORD,lge
+  - DOMAIN-SUFFIX,lg.com
+  - DOMAIN-SUFFIX,lge.com
+  - DOMAIN-SUFFIX,lgtvcommon.com
+  - DOMAIN-SUFFIX,lgthinq.com
+  - DOMAIN-SUFFIX,lgappstv.com
+  - DOMAIN-SUFFIX,lgsmartad.com
+  - DOMAIN-SUFFIX,dacom.co.kr
+  - DOMAIN-SUFFIX,kidc.net
+  - DOMAIN-SUFFIX,uplus.co.kr
+  - DOMAIN-KEYWORD,lge
 
 # ==============================================================================
 # 10. КРИПТОВАЛЮТЫ И ФИНАНСЫ (COINBASE, KRAKEN, TRADINGVIEW, BESTCHANGE, BYBIT)
 # ==============================================================================
-- DOMAIN-SUFFIX,bestchange.com
-- DOMAIN-SUFFIX,bestchange.ru
-- DOMAIN-SUFFIX,bestchange.net
-- DOMAIN-SUFFIX,coinbase.com
-- DOMAIN-SUFFIX,kraken.com
-- DOMAIN-SUFFIX,tradingview.com
-- DOMAIN-SUFFIX,coinmarketcap.com
-- DOMAIN-SUFFIX,coingecko.com
-- DOMAIN-SUFFIX,bybit.com
-- DOMAIN-SUFFIX,bybit.me
+  - DOMAIN-SUFFIX,bestchange.com
+  - DOMAIN-SUFFIX,bestchange.ru
+  - DOMAIN-SUFFIX,bestchange.net
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,tradingview.com
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,coingecko.com
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit.me
 
 # ==============================================================================
 # 11. НЕЗАВИСИМЫЕ СМИ, БИБЛИОТЕКИ, СТАТЬИ И БЛОКИРОВКИ РКН
 # ==============================================================================
 # Электронные библиотеки и научные архивы (без торрентов)
-- DOMAIN-SUFFIX,flibusta.is
-- DOMAIN-SUFFIX,flibusta.club
-- DOMAIN-SUFFIX,flibusta.site
-- DOMAIN-SUFFIX,libgen.is
-- DOMAIN-SUFFIX,libgen.rs
-- DOMAIN-SUFFIX,libgen.st
-- DOMAIN-SUFFIX,sci-hub.se
-- DOMAIN-SUFFIX,sci-hub.st
-- DOMAIN-SUFFIX,sci-hub.ru
+  - DOMAIN-SUFFIX,flibusta.is
+  - DOMAIN-SUFFIX,flibusta.club
+  - DOMAIN-SUFFIX,flibusta.site
+  - DOMAIN-SUFFIX,libgen.is
+  - DOMAIN-SUFFIX,libgen.rs
+  - DOMAIN-SUFFIX,libgen.st
+  - DOMAIN-SUFFIX,sci-hub.se
+  - DOMAIN-SUFFIX,sci-hub.st
+  - DOMAIN-SUFFIX,sci-hub.ru
 
 # Независимые СМИ и информационные порталы
-- DOMAIN-SUFFIX,meduza.io
-- DOMAIN-SUFFIX,bbc.com
-- DOMAIN-SUFFIX,bbci.co.uk
-- DOMAIN-SUFFIX,dw.com
-- DOMAIN-SUFFIX,svoboda.org
-- DOMAIN-SUFFIX,theins.ru
-- DOMAIN-SUFFIX,theins.info
-- DOMAIN-SUFFIX,novayagazeta.ru
-- DOMAIN-SUFFIX,novayagazeta.eu
-- DOMAIN-SUFFIX,zona.media
-- DOMAIN-SUFFIX,tjournal.ru
-- DOMAIN-SUFFIX,doxa.team
-- DOMAIN-SUFFIX,istories.media
-- DOMAIN-SUFFIX,currenttime.tv
-- DOMAIN-SUFFIX,radiosvoboda.org
-- DOMAIN-SUFFIX,vtimes.io
-- DOMAIN-SUFFIX,holod.media
-- DOMAIN-SUFFIX,verstka.media
-- DOMAIN-SUFFIX,agentura.ru
-- DOMAIN-SUFFIX,kavkazr.com
-- DOMAIN-SUFFIX,krymr.com
-- DOMAIN-SUFFIX,sibreal.org
-- DOMAIN-SUFFIX,severreal.org
-- DOMAIN-SUFFIX,idelreal.org
+  - DOMAIN-SUFFIX,meduza.io
+  - DOMAIN-SUFFIX,bbc.com
+  - DOMAIN-SUFFIX,bbci.co.uk
+  - DOMAIN-SUFFIX,dw.com
+  - DOMAIN-SUFFIX,svoboda.org
+  - DOMAIN-SUFFIX,theins.ru
+  - DOMAIN-SUFFIX,theins.info
+  - DOMAIN-SUFFIX,novayagazeta.ru
+  - DOMAIN-SUFFIX,novayagazeta.eu
+  - DOMAIN-SUFFIX,zona.media
+  - DOMAIN-SUFFIX,tjournal.ru
+  - DOMAIN-SUFFIX,doxa.team
+  - DOMAIN-SUFFIX,istories.media
+  - DOMAIN-SUFFIX,currenttime.tv
+  - DOMAIN-SUFFIX,radiosvoboda.org
+  - DOMAIN-SUFFIX,vtimes.io
+  - DOMAIN-SUFFIX,holod.media
+  - DOMAIN-SUFFIX,verstka.media
+  - DOMAIN-SUFFIX,agentura.ru
+  - DOMAIN-SUFFIX,kavkazr.com
+  - DOMAIN-SUFFIX,krymr.com
+  - DOMAIN-SUFFIX,sibreal.org
+  - DOMAIN-SUFFIX,severreal.org
+  - DOMAIN-SUFFIX,idelreal.org
 
 # Популярные заблокированные ресурсы и сервисы
-- DOMAIN-SUFFIX,archive.org
-- DOMAIN-SUFFIX,waybackmachine.org
-- DOMAIN-SUFFIX,ntc.party
-- DOMAIN-SUFFIX,iherb.com
+  - DOMAIN-SUFFIX,archive.org
+  - DOMAIN-SUFFIX,waybackmachine.org
+  - DOMAIN-SUFFIX,ntc.party
+  - DOMAIN-SUFFIX,iherb.com
 
 # Файлообменники, пастбины и облачные хранилища
-- DOMAIN-SUFFIX,mega.nz
-- DOMAIN-SUFFIX,mega.io
-- DOMAIN-SUFFIX,pastebin.com
-- DOMAIN-SUFFIX,mediafire.com
-- DOMAIN-SUFFIX,rapidgator.net
+  - DOMAIN-SUFFIX,mega.nz
+  - DOMAIN-SUFFIX,mega.io
+  - DOMAIN-SUFFIX,pastebin.com
+  - DOMAIN-SUFFIX,mediafire.com
+  - DOMAIN-SUFFIX,rapidgator.net
 
 # Хостинг, VPS и инфраструктура
-- DOMAIN-SUFFIX,hetzner.com
-- DOMAIN-SUFFIX,hetzner.cloud
-- DOMAIN-SUFFIX,digitalocean.com
-- DOMAIN-SUFFIX,vultr.com
-- DOMAIN-SUFFIX,linode.com
-- DOMAIN-SUFFIX,ovh.com
-- DOMAIN-SUFFIX,ovhcloud.com
+  - DOMAIN-SUFFIX,hetzner.com
+  - DOMAIN-SUFFIX,hetzner.cloud
+  - DOMAIN-SUFFIX,digitalocean.com
+  - DOMAIN-SUFFIX,vultr.com
+  - DOMAIN-SUFFIX,linode.com
+  - DOMAIN-SUFFIX,ovh.com
+  - DOMAIN-SUFFIX,ovhcloud.com
 
 # VPN-порталы и зеркала загрузки клиентов
-- DOMAIN-SUFFIX,protonvpn.com
-- DOMAIN-SUFFIX,mullvad.net
-- DOMAIN-SUFFIX,windscribe.com
+  - DOMAIN-SUFFIX,protonvpn.com
+  - DOMAIN-SUFFIX,mullvad.net
+  - DOMAIN-SUFFIX,windscribe.com
 
 # ==============================================================================
 # 12. 18+ СЕРВИСЫ (ПОЛНЫЙ СПИСОК С ЗЕРКАЛАМИ БЕЗ ТОРРЕНТОВ)
 # ==============================================================================
-- DOMAIN-SUFFIX,pornhub.com
-- DOMAIN-SUFFIX,phncdn.com
-- DOMAIN-SUFFIX,xhamster.com
-- DOMAIN-SUFFIX,xhamsterlive.com
-- DOMAIN-SUFFIX,xhcdn.com
-- DOMAIN-SUFFIX,xvideos.com
-- DOMAIN-SUFFIX,xvideos-cdn.com
-- DOMAIN-SUFFIX,xnxx.com
-- DOMAIN-SUFFIX,xnxx-cdn.com
-- DOMAIN-SUFFIX,xnxx-ru.com
-- DOMAIN-SUFFIX,xv-ru.com
-- DOMAIN-SUFFIX,redtube.com
-- DOMAIN-SUFFIX,rdtcdn.com
-- DOMAIN-SUFFIX,redgifs.com
-- DOMAIN-SUFFIX,reddxxx.com
-- DOMAIN-SUFFIX,hqporner.com
-- DOMAIN-SUFFIX,beeg.com
-- DOMAIN-SUFFIX,f95zone.to
-- DOMAIN-SUFFIX,rule34.xxx
-- DOMAIN-SUFFIX,sankakucomplex.com
-- DOMAIN-SUFFIX,kemono.cr
-- DOMAIN-SUFFIX,externulls.com
-- DOMAIN-SUFFIX,strpst.com
-- DOMAIN-SUFFIX,plab.site
+  - DOMAIN-SUFFIX,pornhub.com
+  - DOMAIN-SUFFIX,phncdn.com
+  - DOMAIN-SUFFIX,xhamster.com
+  - DOMAIN-SUFFIX,xhamsterlive.com
+  - DOMAIN-SUFFIX,xhcdn.com
+  - DOMAIN-SUFFIX,xvideos.com
+  - DOMAIN-SUFFIX,xvideos-cdn.com
+  - DOMAIN-SUFFIX,xnxx.com
+  - DOMAIN-SUFFIX,xnxx-cdn.com
+  - DOMAIN-SUFFIX,xnxx-ru.com
+  - DOMAIN-SUFFIX,xv-ru.com
+  - DOMAIN-SUFFIX,redtube.com
+  - DOMAIN-SUFFIX,rdtcdn.com
+  - DOMAIN-SUFFIX,redgifs.com
+  - DOMAIN-SUFFIX,reddxxx.com
+  - DOMAIN-SUFFIX,hqporner.com
+  - DOMAIN-SUFFIX,beeg.com
+  - DOMAIN-SUFFIX,f95zone.to
+  - DOMAIN-SUFFIX,rule34.xxx
+  - DOMAIN-SUFFIX,sankakucomplex.com
+  - DOMAIN-SUFFIX,kemono.cr
+  - DOMAIN-SUFFIX,externulls.com
+  - DOMAIN-SUFFIX,strpst.com
+  - DOMAIN-SUFFIX,plab.site
 
 # ==============================================================================
 # 13. ВАШИ ПЕРСОНАЛЬНЫЕ ДОМЕНЫ И СУФФИКСЫ ИЗ КОНФИГА
 # ==============================================================================
-- DOMAIN-SUFFIX,sws-extension.org
-- DOMAIN-SUFFIX,zipjpg.com
-- DOMAIN-SUFFIX,pirateface.co
-- DOMAIN-KEYWORD,pawchive
+  - DOMAIN-SUFFIX,sws-extension.org
+  - DOMAIN-SUFFIX,zipjpg.com
+  - DOMAIN-SUFFIX,pirateface.co
+  - DOMAIN-KEYWORD,pawchive
