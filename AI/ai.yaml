@@ -45,15 +45,6 @@ payload:
 - DOMAIN-SUFFIX,stun.twilio.com
 - DOMAIN-SUFFIX,stun.services.mozilla.com
 
-# Cloudflare Trace IP (критично для прохождения чекера и обхода блокировок 1.1.1.1 в РФ)
-- IP-CIDR,1.1.1.1/32,no-resolve
-- IP-CIDR,1.0.0.1/32,no-resolve
-- DOMAIN-SUFFIX,cloudflare.com
-
-# Сам чекер net.coffee (чтобы его API и скрипты шли через узел AI)
-- DOMAIN-SUFFIX,net.coffee
-- DOMAIN-SUFFIX,ip.net.coffee
-
 # ==============================================================================
 # 3. АНТИ-ДЕТЕКТ, БРАУЗЕРНЫЙ ФИНГЕРПРИНТ, CAPTCHA И АНТИФРОД
 # Сервисы проверки среды браузера, аппаратных отпечатков и капчи, встроенные в AI:
