@@ -20,38 +20,48 @@ payload:
   - DOMAIN-SUFFIX,steamstatic.com
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamconnecttest.com
+  - DOMAIN-SUFFIX,steamstat.us
+  - DOMAIN-SUFFIX,steam.tv
+  - DOMAIN-SUFFIX,valve.net
   - DOMAIN-SUFFIX,valvesoftware.com
-  
-  # КРИТИЧНО: Картинки руководств, аватары, скриншоты и воркшоп (images.steamusercontent.com)
-  - DOMAIN-SUFFIX,steamusercontent.com
-  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
-  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
-  
-  # Веб-CDN стилей, шапок игр, иконок и видеотрансляций (Akamai, Cloudflare, Fastly)
+  # КРИТИЧНО ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ И БРАУЗЕРА (Стили, скрипты, шрифты)
+  - DOMAIN-SUFFIX,steammobile.akamaized.net
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
   - DOMAIN-SUFFIX,steamstore-a.akamaihd.net
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
-  - DOMAIN-SUFFIX,steambroadcast-a.akamaihd.net
-  - DOMAIN-SUFFIX,steamvideo.akamaized.net
   - DOMAIN-SUFFIX,fastly.steamstatic.com
   - DOMAIN-SUFFIX,cloudflare.steamstatic.com
-  
-  # Ключевые слова (перехватывают ВСЕ зеркала и поддомены со 100% гарантией)
+  # КРИТИЧНО ДЛЯ СКРИНШОТОВ, ГАЙДОВ И АВАТАРОВ (images.steamusercontent.com)
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+  # Видеотрансляции в сообществе
+  - DOMAIN-SUFFIX,steambroadcast.akamaized.net
+  - DOMAIN-SUFFIX,steambroadcast-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamvideo.akamaized.net
+  # Ключевые слова перехвата (гарантия 100% покрытия всех поддоменов)
   - DOMAIN-KEYWORD,steamcommunity
   - DOMAIN-KEYWORD,steamstatic
   - DOMAIN-KEYWORD,steamusercontent
+  - DOMAIN-KEYWORD,steamuserimages
   - DOMAIN-KEYWORD,steampowered
   - DOMAIN-KEYWORD,steambroadcast
   - DOMAIN-KEYWORD,steamstore
-
-# Игры Valve
-  - DOMAIN-SUFFIX,counter-strike.net
-  - DOMAIN-SUFFIX,dota2.com
-  - DOMAIN-SUFFIX,teamfortress.com
-  - DOMAIN-SUFFIX,valvesoftware.com
-  - DOMAIN-SUFFIX,playartifact.com
-  - DOMAIN-SUFFIX,underlords.com
-  - DOMAIN-SUFFIX,playdeadlock.com
+  # Прямые пулы IP-адресов Valve AS32590 (для мгновенной авторизации клиента и мобильного приложения)
+  - IP-CIDR,155.133.224.0/19,no-resolve
+  - IP-CIDR,162.254.192.0/21,no-resolve
+  - IP-CIDR,185.25.180.0/22,no-resolve
+  - IP-CIDR,192.69.96.0/22,no-resolve
+  - IP-CIDR,208.64.200.0/22,no-resolve
+  - IP-CIDR,208.78.164.0/22,no-resolve
+  - IP-CIDR,146.66.152.0/24,no-resolve
+  - IP-CIDR,146.66.155.0/24,no-resolve
+  - IP-CIDR,103.10.124.0/23,no-resolve
+  - IP-CIDR,103.28.54.0/24,no-resolve
+  - IP-CIDR,205.196.6.0/24,no-resolve
+  - IP-CIDR,45.121.184.0/24,no-resolve
 
 # ==============================================================================
 # 2. XBOX & MICROSOFT GAMING (XBOX LIVE, GAME PASS, CLOUD, BETHESDA, MINECRAFT)
