@@ -33,6 +33,7 @@ payload:
   - DOMAIN-SUFFIX,spotilocal.com
   - DOMAIN-SUFFIX,spotifynewsroom.jp
   - DOMAIN-KEYWORD,spotify
+  - DOMAIN-SUFFIX,spotify.link
 
 # ==============================================================================
 # 2. SPOTIFY: СЕРВЕРЫ АУДИОПОТОКОВ, ОБЛОЖКИ И БЕЗОПАСНЫЙ CDN
@@ -78,6 +79,7 @@ payload:
   - DOMAIN-SUFFIX,sndcdn.com
   - DOMAIN-SUFFIX,snd.sc
   - DOMAIN-SUFFIX,soundcloud.cloud
+  - DOMAIN-SUFFIX,p-cdn.us
 
 # Beatport, Mixcloud, TuneIn
   - DOMAIN-SUFFIX,beatport.com

@@ -57,6 +57,9 @@ payload:
   - DOMAIN,challenges.cloudflare.com
   - DOMAIN-SUFFIX,turnstile.cloudflare.com
   - DOMAIN-SUFFIX,cloudflareinsights.com
+  - DOMAIN-SUFFIX,identrust.com
+  - DOMAIN-SUFFIX,segment.io
+  - DOMAIN-SUFFIX,algolia.net
 
 # FingerprintJS Pro & Castle — снятие аппаратных отпечатков и выявление подмены IP
   - DOMAIN-SUFFIX,fingerprint.com

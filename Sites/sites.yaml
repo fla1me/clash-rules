@@ -31,11 +31,18 @@ payload:
   - DOMAIN,location.microsoft.com
   - DOMAIN,fpt2.microsoft.com
   - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msauth.net
+  - DOMAIN-SUFFIX,msftauth.net
+  - DOMAIN-SUFFIX,microsoft-tst.com
 
 # Adobe & Autodesk Genuine Check (проверка региона лицензии и блокировок РФ)
   - DOMAIN,genuine.adobe.com
   - DOMAIN,genuine-software.autodesk.com
   - DOMAIN,ipm-provider.autodesk.com
+  - DOMAIN-SUFFIX,creativecloud.com
+  - DOMAIN-SUFFIX,photoshop.com
+  - DOMAIN-SUFFIX,ftcdn.net
+  - DOMAIN-KEYWORD,adobe
 
 # DataDome, Sift & Fingerprint (детекция IP/VPN для криптобирж и веб-сервисов)
   - DOMAIN-SUFFIX,datadome.co
@@ -147,6 +154,10 @@ payload:
   - DOMAIN-SUFFIX,capcutapi.com
   - DOMAIN-SUFFIX,capcutcdn.com
   - DOMAIN-SUFFIX,capcutstatic.com
+  - DOMAIN,p16-tiktokcdn-com.akamaized.net
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-KEYWORD,tiktok
 
 # ==============================================================================
 # 3. MICROSOFT (ПОЛНЫЙ НАБОР: WINDOWS UPDATE, АКТИВАЦИЯ, 365, TEAMS, AZURE)
@@ -224,6 +235,9 @@ payload:
   - DOMAIN-SUFFIX,pypi.org
   - DOMAIN-SUFFIX,pythonhosted.org
 
+  - DOMAIN-SUFFIX,protonvpn.com
+  - DOMAIN-SUFFIX,quay.io
+  - DOMAIN-SUFFIX,gcr.io
 # ==============================================================================
 # 7. ИНСТРУМЕНТЫ ПРОДУКТИВНОСТИ И СВЯЗЬ (NOTION, FIGMA, MIRO, SLACK, ZOOM, PROTON)
 # ==============================================================================
