@@ -611,6 +611,7 @@ payload:
   - DOMAIN-SUFFIX,externulls.com
   - DOMAIN-SUFFIX,strpst.com
   - DOMAIN-SUFFIX,plab.site
+  - DOMAIN-SUFFIX,e621.net
 
 # ==============================================================================
 # 13. ВАШИ ПЕРСОНАЛЬНЫЕ ДОМЕНЫ И СУФФИКСЫ ИЗ КОНФИГА
