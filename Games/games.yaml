@@ -84,6 +84,8 @@ payload:
   - DOMAIN-SUFFIX,msgamestudios.com
   - DOMAIN-SUFFIX,renovacionxboxlive.com
   - DOMAIN,store-images.s-microsoft.com
+  - DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN,logincdn.msauth.net
 # Minecraft & Mojang
   - DOMAIN-SUFFIX,minecraft.net
   - DOMAIN-SUFFIX,minecraftservices.com
@@ -167,6 +169,7 @@ payload:
   - DOMAIN-SUFFIX,easyanticheat.net
   - DOMAIN-KEYWORD,epicgames
   - DOMAIN-KEYWORD,easyanticheat
+  - DOMAIN-SUFFIX,easy.ac
 
 # ==============================================================================
 # 6. ELECTRONIC ARTS (EA APP, ORIGIN, APEX, BATTLEFIELD, FC 24/25, SIMS)
@@ -182,6 +185,9 @@ payload:
   - DOMAIN-SUFFIX,eaplay.com
   - DOMAIN-KEYWORD,origin
   - DOMAIN-SUFFIX,eaassets-a.akamaihd.net
+  - DOMAIN-SUFFIX,origin-a.akamaihd.net
+  - DOMAIN-SUFFIX,cloudsync-prod.s3.amazonaws.com
+  - DOMAIN-SUFFIX,playapex.com
 
 # ==============================================================================
 # 7. UBISOFT (UBISOFT CONNECT, UPLAY, R6 SIEGE, XDEFIANT, ASSASSIN'S CREED)
@@ -212,6 +218,9 @@ payload:
   - DOMAIN-KEYWORD,blizzard
   - DOMAIN-KEYWORD,battle.net
   - DOMAIN-SUFFIX,blz-contentstack.com
+  - DOMAIN-SUFFIX,blzmedia-a.akamaihd.net
+  - DOMAIN-SUFFIX,blznav.akamaized.net
+  - DOMAIN-SUFFIX,bnetproduct-a.akamaihd.net
 # Activision & Call of Duty & Демонвейр
   - DOMAIN-SUFFIX,activision.com
   - DOMAIN-SUFFIX,callofduty.com
@@ -235,6 +244,10 @@ payload:
   - DOMAIN-SUFFIX,legendsofruneterra.com
   - DOMAIN-SUFFIX,riotgames.net
   - DOMAIN-SUFFIX,vanguard.riotgames.com
+  - DOMAIN-SUFFIX,lolstatic-a.akamaihd.net
+  - DOMAIN-SUFFIX,lolusercontent.com
+  - DOMAIN-SUFFIX,rgpub.io
+  - DOMAIN-SUFFIX,rstatic.net
 
 # ==============================================================================
 # 10. ROBLOX (КЛИЕНТ, ДВИЖОК, СТУДИЯ, ИНВЕНТАРЬ И АВТОРИЗАЦИЯ)
