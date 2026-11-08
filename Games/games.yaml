@@ -20,12 +20,30 @@ payload:
   - DOMAIN-SUFFIX,steamstatic.com
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,valvesoftware.com
+  
+  # КРИТИЧНО: Картинки руководств, аватары, скриншоты и воркшоп (images.steamusercontent.com)
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+  
+  # Веб-CDN стилей, шапок игр, иконок и видеотрансляций (Akamai, Cloudflare, Fastly)
   - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
   - DOMAIN-SUFFIX,steamstore-a.akamaihd.net
-  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
-  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+  - DOMAIN-SUFFIX,steambroadcast-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamvideo.akamaized.net
+  - DOMAIN-SUFFIX,fastly.steamstatic.com
+  - DOMAIN-SUFFIX,cloudflare.steamstatic.com
+  
+  # Ключевые слова (перехватывают ВСЕ зеркала и поддомены со 100% гарантией)
+  - DOMAIN-KEYWORD,steamcommunity
+  - DOMAIN-KEYWORD,steamstatic
+  - DOMAIN-KEYWORD,steamusercontent
+  - DOMAIN-KEYWORD,steampowered
   - DOMAIN-KEYWORD,steambroadcast
   - DOMAIN-KEYWORD,steamstore
+
 # Игры Valve
   - DOMAIN-SUFFIX,counter-strike.net
   - DOMAIN-SUFFIX,dota2.com
@@ -153,6 +171,7 @@ payload:
   - DOMAIN-SUFFIX,dice.se
   - DOMAIN-SUFFIX,eaplay.com
   - DOMAIN-KEYWORD,origin
+  - DOMAIN-SUFFIX,eaassets-a.akamaihd.net
 
 # ==============================================================================
 # 7. UBISOFT (UBISOFT CONNECT, UPLAY, R6 SIEGE, XDEFIANT, ASSASSIN'S CREED)
@@ -182,6 +201,7 @@ payload:
   - DOMAIN-SUFFIX,warcraft.com
   - DOMAIN-KEYWORD,blizzard
   - DOMAIN-KEYWORD,battle.net
+  - DOMAIN-SUFFIX,blz-contentstack.com
 # Activision & Call of Duty & Демонвейр
   - DOMAIN-SUFFIX,activision.com
   - DOMAIN-SUFFIX,callofduty.com
@@ -255,6 +275,7 @@ payload:
   - DOMAIN-SUFFIX,2k.com
   - DOMAIN-SUFFIX,2kgames.com
   - DOMAIN-KEYWORD,rockstargames
+  - DOMAIN-SUFFIX,rockstarnetwork.com
 
 # ==============================================================================
 # 14. ЯПОНСКИЕ ИЗДАТЕЛИ (BANDAI NAMCO, CAPCOM, SQUARE ENIX, SEGA, FROM SOFTWARE)
